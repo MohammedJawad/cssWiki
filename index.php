@@ -14,6 +14,7 @@
     </header>
 
     <main>
+        <article>blabla</article>
     </main>
 
     <footer>
