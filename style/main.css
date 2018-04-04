@@ -1,0 +1,44 @@
+*{
+    box-sizing:border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+
+}
+body{
+    margin: 0;
+}
+
+header{
+    margin:0;
+    padding:0;
+background-color:#FB8C3B;
+}
+#logo{
+    width: 259px;
+}
+#main-menu{
+    padding: 0;
+    display:inline-block;
+}
+
+ul li {
+
+
+    list-style: none;
+    float: left;
+    text-align: center;
+
+}
+header a {
+    padding: 11px;
+    display: block;
+    color: #733d1d;
+    line-height: 106px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:ghostwhite;
+    font-family: 'Karla', sans-serif;
+}
