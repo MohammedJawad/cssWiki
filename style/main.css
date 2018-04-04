@@ -41,7 +41,7 @@ header a {
     text-decoration: none;
     font-family: 'arial';
 }
-li:last-child{
+header li:last-child{
 
     font-size: 26px;
     width: 54px;
