@@ -32,7 +32,6 @@ ul li {
     text-align: center;
     margin-top: 35px;
 }
-
 header a {
     color:white;
     padding-right: 9px;
@@ -111,6 +110,49 @@ footer{
     font-size: 12px;
     color: #fb8026;
 }
+
+/********* FORM CSS **********/
+#formContact{
+    background-color: indianred;
+}
+
+#formContact fieldset > div{
+    margin: 10px;
+}
+
+#formContact fieldset{
+    border: none;
+}
+
+#formContact label{
+    color: white;
+    text-align: center;
+    padding: 9px 0;
+    width: 80px;
+    display: inline-block;
+    background-color: #fb9838;
+}
+
+#formContact input,  #formContact select{
+    padding: 10px 10px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********* END FORM CSS **********/
+
 
 #divfoot2{
     background-color:#fb8026;
