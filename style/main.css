@@ -2,10 +2,15 @@
     box-sizing:border-box;
 }
 
-article, aside, details, body, figcaption, figure, footer, header, main, nav, section {
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
     display: block;
-    margin: 0;
+
 }
+body{
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
 header{
     display: flex;
     box-sizing: border-box;
@@ -23,6 +28,7 @@ ul li {
     display: inline-block;
     border-bottom: 0;
     list-style: none;
+    float: left;
     text-align: center;
     margin-top: 35px;
 }
@@ -48,4 +54,84 @@ li:last-child{
 }
 a:hover {
     background-color: #FBBC53;
+}
+
+/*START footer*/
+
+footer{
+    width:100%;
+}
+
+#divfoot1{
+    background-color:#fff8f1;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fb8026;
+}
+#divfoot1 form input[type=submit] {
+    background-color:#fb8026;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:18px;
+}
+
+#divfoot1 input[type=submit]:hover {
+    background-color: #bd611d;
+    color: white;
+}
+
+#divfoot1 form input[type=email]{
+    padding: 12px 20px;
+}
+
+
+#divfoot1 nav ul li{
+    list-style: none;
+    text-align: left;
+
+}
+
+#divfootin1{
+    margin-left: 40px;
+    padding: 20px 0 20px;
+}
+
+#divfootin2 nav{
+    float: left;
+    margin-right: 40px;
+    padding: 20px 0 20px;
+}
+
+#divfootin2 a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #fb8026;
+}
+
+#divfoot2{
+    background-color:#fb8026;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#divfoot2 nav ul li{
+    list-style: none;
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#divfoot2 nav{
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+#divfoot2 p{
+    margin-left: 40px;
+    color:#fff;
 }
