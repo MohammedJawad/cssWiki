@@ -19,11 +19,9 @@ header{
 #logo{
     width: 218px;
 }
-#main-menu{
-    display:block;
-}
 
-ul li {
+
+#main-menu ul li {
     padding: -1px;
     display: inline-block;
     border-bottom: 0;
@@ -50,8 +48,24 @@ header li:last-child{
     right: 51px;
 }
 .fa-heart{
-    color: ghostwhite;
+    color: white;
 }
+/*END OF THE HEADER*/
+
+/*START MAIN INDEX*/
+figure{
+    background-color: #bd611d;
+}
+
+
+
+
+
+
+
+/*END OF THE MAIN*/
+
+
 
 /*START footer*/
 
