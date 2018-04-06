@@ -28,21 +28,13 @@
         <main>
             <h1>Welcome</h1>
             <div id="wrapper">
-           <p>Lorem ipsum dolor sit amet, et sumo doming probatus mea, et oblique albucius nec, quo brute sapientem in. Mea minim gloriatur id, vitae appellantur sea te, alii utroque usu et. Sea at populo fierent lucilius, ad vis dicant invenire. Mea eu maiorum detraxit, probo solum honestatis pri ea.
+           <<div id="example1">
 
-               Blandit lucilius te mel. Eum et nostrud cotidieque contentiones. Pro id alia facilisi. Eum veniam feugait signiferumque cu, at ponderum voluptatum complectitur eum.
-
-               Has agam illum altera cu, nec ex liber denique mnesarchum, an dicant aliquam meliore pri. Adipisci definiebas mea et, posse consulatu has te. Quo minim saepe fabulas an, eos insolens nominati pertinacia id, eu eos deserunt praesent persecuti. His in ferri brute, in graecis adolescens mei, convenire maluisset te vim.
-
-               Ea his omnis populo torquatos, ea legere constituam pro. Oratio molestiae moderatius pro te, at eos probo mutat graeco
-               . Iisque ullamcorper cu pri, ut elit partem vulputate vim. Eirmod deserunt iracundia in vel, no urbanitas deseruisse eum, an possit labitur mei. Case appareat eam ut, cu usu amet feugiat explicari, consetetur reprehendunt ad qui.
-
-               At eum principes elaboraret instructior, ex eum electram expetenda scriptorem, his tantas omn</p>
-            </div>
-
-            <div id="example">
-
-
+                <figure>
+                    <img src="images/bird.png" alt="Bird Example CSS"  id="bird">
+                    <figcaption>Example 1 - A view of the pulpit rock in Norway.</figcaption>
+                    <span><a class="fas fa-heart"></a></span>
+                </figure>
 
 
 
