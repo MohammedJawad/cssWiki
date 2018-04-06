@@ -35,7 +35,7 @@ ul li {
 
 header a {
     color:white;
-    padding-right: 9px;
+    margin: 7px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -51,9 +51,6 @@ header li:last-child{
 }
 .fa-heart{
     color: ghostwhite;
-}
-a:hover {
-    background-color: #FBBC53;
 }
 
 /*START footer*/
