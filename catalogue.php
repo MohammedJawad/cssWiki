@@ -9,5 +9,7 @@ require_once 'views/page_top.php';
             <span><a class="fas fa-heart"></a></span>
         </figure>
     </div>
+
+
 </main>
 <?php require_once 'views/page_bottom.php';
