@@ -19,11 +19,9 @@ header{
 #logo{
     width: 218px;
 }
-#main-menu{
-    display:block;
-}
 
-ul li {
+
+#main-menu ul li {
     padding: -1px;
     display: inline-block;
     border-bottom: 0;
@@ -34,7 +32,7 @@ ul li {
 }
 header a {
     color:white;
-    padding-right: 9px;
+    margin: 7px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -49,11 +47,24 @@ header li:last-child{
     right: 51px;
 }
 .fa-heart{
-    color: ghostwhite;
+    color: white;
 }
-a:hover {
-    background-color: #FBBC53;
+/*END OF THE HEADER*/
+
+/*START MAIN INDEX*/
+figure{
+    background-color: #bd611d;
 }
+
+
+
+
+
+
+
+/*END OF THE MAIN*/
+
+
 
 /*START footer*/
 
