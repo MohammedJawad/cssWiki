@@ -10,6 +10,7 @@ require_once 'views/page_top.php';
                 concludaturque vix, nullam legere dissentiet has no, quando aperiri ea mea. Ad nec omnium laoreet. Et vero placerat eum, an quis tempor epicuri quo,
                 ad aeterno persius duo.
             </p>
+            <a href="catalogue.php">
             <div id="example1">
                 <div class="wrapper">
                     <div class="sun"></div>
@@ -102,7 +103,7 @@ require_once 'views/page_top.php';
                         </ul>
                     </div>
                 </div>
-
+            </a>
             </div>
             <div id="labtitles">
                 <h3>Animation 1</h3>
