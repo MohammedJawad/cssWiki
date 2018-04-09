@@ -1,19 +1,7 @@
 <?php
+require_once 'views/page_top.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8"/>
-    <title>Contactez-nous</title>
-    <link href="style/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-</head>
-<body>
-<div id="wrapper">
-    <header>
-        <h1></h1>
-    </header>
 
     <main>
         <form id="formContact" method="post">
@@ -47,8 +35,4 @@
         </form>
     </main>
 
-    <footer>
-    </footer>
-</div>
-</body>
-</html>
+<?php require_once 'views/page_bottom.php';
