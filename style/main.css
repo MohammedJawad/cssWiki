@@ -1015,11 +1015,11 @@ section {
     border-top: 1px solid #ddd;
 }
 
-input {
+.onglet input {
     display: none;
 }
 
-label {
+.onglet label {
     display: inline-block;
     margin: 0 0 -1px;
     padding: 15px 25px;
@@ -1029,19 +1029,19 @@ label {
     border: 1px solid transparent;
 }
 
-label:before {
+.onglet label:before {
     font-family: fontawesome;
     font-weight: normal;
     margin-right: 10px;
 }
 
 
-label:hover {
+.onglet label:hover {
     color: #888;
     cursor: pointer;
 }
 
-input:checked + label {
+.onglet input:checked + label {
     color: #555;
     border: 1px solid #ddd;
     border-top: 2px solid #fb8026;
@@ -1245,7 +1245,6 @@ footer{
     outline: none;
     background-color: #fb8026;;
     color: white;
-    cursor: pointer;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;

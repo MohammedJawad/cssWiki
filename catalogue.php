@@ -1,7 +1,7 @@
 <?php
 require_once 'views/page_top.php';
 ?>
-    <main>
+    <main class="onglet">
         <h1>Catalogue</h1>
         <input id="tab1" type="radio" name="tabs" checked>
         <label for="tab1">Boutons</label>
