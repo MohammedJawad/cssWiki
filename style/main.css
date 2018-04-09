@@ -1122,7 +1122,8 @@ footer{
 
 /********* FORM CSS **********/
 #formContact{
-    background-color: indianred;
+    width: 500px;
+    margin: 0 auto;
 }
 
 #formContact fieldset > div{
@@ -1131,20 +1132,67 @@ footer{
 
 #formContact fieldset{
     border: none;
+    margin-left: 55px;
 }
 
 #formContact label{
+    float: left;
+    height: 37px;
     color: white;
     text-align: center;
-    padding: 9px 0;
+    padding: 7px 0;
     width: 80px;
     display: inline-block;
     background-color: #fb9838;
 }
 
-#formContact input,  #formContact select{
+#formContact input, #formContact textarea{
+    border: solid 1px orange;
+    width: 260px;
     padding: 10px 10px;
-    border: none;
+    color: orange;
+}
+
+#formContact textarea{
+    resize: none;
+    height: 100px;
+}
+
+#formContact select{
+    padding: 9px 10px;
+    border: solid 1px orange;
+    color: orange;
+    width: 260px;
+}
+
+#formContact option{
+   font-size: 1.2em;
+}
+
+#formContact input[type="submit"]{
+    transition: background-color 0.2s ease;
+    color: white;
+    background: #fb9838;
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+#formContact input[type="submit"]:hover{
+    background-color: #ffc681;
+}
+
+::placeholder {
+    color: orange;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: orange;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: orange;
 }
 
 
