@@ -60,14 +60,14 @@ header li:last-child{
 #example1{
     width: 406px;
     /* border: 1px solid #ccc; */
-    /* height: 285px; */
-    /* margin: auto; */
+    height: 285px;
+    margin: auto;
     margin: auto;
     display: block;
-    width: 33%;
-    background-color: #f9af78c7;
+    width: 44.5%;
+    /* background-color: #f9af78c7; */
     text-align: center;
-    box-shadow: 10px -4px 17px #fb8026;
+    /*box-shadow: -1px -10px 17px #fb8026;*/
 }
 
 #bird{
@@ -84,7 +84,7 @@ flex-direction: row-reverse;
 }
 
 h1 {
-background-color: beige;
+/*background-color: beige;
 grid-area: text;
 font-family: 'Sarpanch', sans-serif;
 font-size: 20vmin;
@@ -92,7 +92,7 @@ margin: 0;
 padding: 30px;
 color: #f1ba11;
 text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #ed880b59;
-text-align: center;
+text-align: center;*/
 }
 
 
