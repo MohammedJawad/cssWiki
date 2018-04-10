@@ -52,9 +52,7 @@ header li:last-child{
 }
 /*END OF THE HEADER*/
 
-main{
-    margin: 40px 100px 100px;
-}
+
 /*START MAIN INDEX*/
 #bannercss{
     width: 100%;
@@ -80,7 +78,7 @@ figcaption{
     display: flex;
     flex-direction: row-reverse;
 }
-@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
+
 h1 {
     background-color: beige;
     grid-area: text;
@@ -1448,7 +1446,7 @@ footer{
     color: orange;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+:-ms-input-placeholder { /* Microsoft Edge */
     color: orange;
 }
 
