@@ -10,14 +10,16 @@
         <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img src="images/csswiki_logo2.png" href="index.php" alt="company.logo" id="logo">
-            <nav id="main-menu">
-                <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="catalogue.php">Catalogue</a></li>
-                    <li><a href="contact.php">Contactez-Nous</a></li>
-                    <li><a class="fas fa-heart"></a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <img src="images/csswiki_logo2.png" href="index.php" alt="company.logo" id="logo">
+        <nav id="main-menu">
+            <ul>
+
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="catalogue.php">Catalogue</a></li>
+                <li><a href="contact.php">Contactez-Nous</a></li>
+                <li><a class="fas fa-heart"></a></li>
+            </ul>
+
+        </nav>
+    </header>

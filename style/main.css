@@ -58,6 +58,10 @@ header li:last-child{
     width: 100%;
 }
 #example1{
+    width: 406px;
+    /* border: 1px solid #ccc; */
+    /* height: 285px; */
+    /* margin: auto; */
     margin: auto;
     display: block;
     width: 33%;
@@ -67,62 +71,55 @@ header li:last-child{
 }
 
 #bird{
-    width:111.1%;
+width:111.1%;
 }
 figcaption{
-    display: flex;
-    flex-flow: row;
+display: flex;
+flex-flow: row;
 }
 #heart1{
-    padding-left: 386px;
-    display: flex;
-    flex-direction: row-reverse;
+padding-left: 386px;
+display: flex;
+flex-direction: row-reverse;
 }
 
 h1 {
-    background-color: beige;
-    grid-area: text;
-    font-family: 'Sarpanch', sans-serif;
-    font-size: 20vmin;
-    margin: 0;
-    padding: 30px;
-    color: #f1ba11;
-    text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #ed880b59;
-    text-align: center;
-
-#example1{
-    width: 600px;
-    border: 1px solid #ccc;
-    height: 300px;
-    margin:auto;
-    margin-top: 50px;
-    min-width: 300px;
+background-color: beige;
+grid-area: text;
+font-family: 'Sarpanch', sans-serif;
+font-size: 20vmin;
+margin: 0;
+padding: 30px;
+color: #f1ba11;
+text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #ed880b59;
+text-align: center;
 }
 
+
 #labtitles{
-    margin: auto;
-    background: #fff8f1;
-    width: 600px;
+margin: auto;
+background: #fff8f1;
+width: 600px;
 }
 
 h3{
-    display: inline-block;
-    margin: 10px 0 10px;
-    margin-left: 1%;
-    color:#fb8026;
+display: inline-block;
+margin: 10px 0 10px;
+margin-left: 1%;
+color:#fb8026;
 }
 #labtitles img{
-    float: right;
-    margin-right: 1%;
-    margin-top: 10px;
+float: right;
+margin-right: 1%;
+margin-top: 10px;
 }
 
 h4{
-    margin-top: 0;
-    padding-bottom: 10px;
-    margin-left: 1%;
-    font-size: 12px;
-    font-weight: normal;
+margin-top: 0;
+padding-bottom: 10px;
+margin-left: 1%;
+font-size: 12px;
+font-weight: normal;
 }
 /*START MAIN EXECUTER*/
 
@@ -1084,7 +1081,7 @@ tabcontent2{
 }
 .floor::before{
     content:"";
-    background-color:content:"";
+
     background-color:#1E2D49;
     width:200px;
     height:50px;
@@ -1318,7 +1315,7 @@ div.rocket div {
 
 
 
-/*START footer*/
+/*START MAIN footer*/
 
 footer{
     width:100%;

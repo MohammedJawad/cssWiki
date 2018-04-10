@@ -17,37 +17,7 @@
 
 </head>
 <body>
-<header>
-    <img src="images/csswiki_logo2.png" href="index.php" alt="company.logo" id="logo">
-    <nav id="main-menu">
-        <ul>
 
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="catalogue.php">Catalogue</a></li>
-            <li><a href="contact.php">Contactez-Nous</a></li>
-            <li><a class="fas fa-heart"></a></li>
-        </ul>
-
-    </nav>
-</header>
-<main>
-
-
-    <div id="example1">
-
-        <figure>
-            <img src="images/bird.png" alt="Bird Example CSS"  id="bird">
-            <figcaption>Example 1 - A view of the pulpit rock in Norway.</figcaption>
-            <span><a class="fas fa-heart"></a></span>
-        </figure>
-
-
-
-
-
-
-    </div>
-</main>
 <footer>
     <div id="divfoot1">
         <div id="divfootin1">
