@@ -33,6 +33,13 @@
 <main>
 
 
+    <div id="example1">
+
+        <figure>
+            <img src="images/bird.png" alt="Bird Example CSS"  id="bird">
+            <figcaption>Example 1 - A view of the pulpit rock in Norway.</figcaption>
+            <span><a class="fas fa-heart"></a></span>
+        </figure>
 
 
 
@@ -78,6 +85,22 @@
             </ul>
         </nav>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/go-to-the-top.png" alt="back to top button"></button>
 </footer>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
 </html>
