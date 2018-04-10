@@ -40,7 +40,7 @@ body{
 header{
     display: flex;
     box-sizing: border-box;
-    background-color:#FB8C3B;
+    background-color:#fb8026;
 }
 #logo{
     width: 218px;
@@ -78,12 +78,10 @@ header li:last-child{
 /*END OF THE HEADER*/
 
 main{
-    margin: 20px 100px 20px;
+    margin: 40px 100px 100px;
 }
 /*START MAIN INDEX*/
-figure{
-    background-color: #bd611d;
-}
+
 #example1{
     width: 600px;
     border: 1px solid #ccc;
@@ -108,6 +106,7 @@ h3{
 #labtitles img{
     float: right;
     margin-right: 1%;
+    margin-top: 10px;
 }
 
 h4{
@@ -1251,6 +1250,56 @@ tabcontent2{
     }
 }
 
+/*TRANSITION 1*/
+
+#outerspace {
+    position: relative;
+    height: 100%;
+    background: #0c0440 url(../images/outerspace.jpg);
+    color: #fff;
+    background-position: left bottom;
+    transition: 3s ease-in;
+}
+div.rocket {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    -webkit-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -o-transition: 3s ease-in;
+    transition: 3s ease-in;
+}
+div.rocket div {
+    width: 92px;
+    height: 215px;
+    background: url(../images/rocket.gif) no-repeat;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+}
+
+#outerspace:hover {
+    background-position: -50% bottom;
+}
+
+#outerspace:hover div.rocket {
+    -webkit-transform: translate(540px,-200px);
+    -moz-transform: translate(540px,-200px);
+    -o-transform: translate(540px,-200px);
+    -ms-transform: translate(540px,-200px);
+    transform: translate(540px,-200px);
+}
+#outerspace:hover div.rocket div {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    transform: rotate(70deg);
+
+
+}
+
 /*START MAIN CATALOGUE*/
 
 .wrapper2{
@@ -1388,6 +1437,7 @@ footer{
 #formContact{
     width: 500px;
     margin: 0 auto;
+    padding-bottom: 125px;
 }
 
 #formContact fieldset > div{
@@ -1407,14 +1457,14 @@ footer{
     padding: 7px 0;
     width: 80px;
     display: inline-block;
-    background-color: #fb9838;
+    background-color: #fb8026;
 }
 
 #formContact input, #formContact textarea{
     border: solid 1px orange;
     width: 260px;
     padding: 10px 10px;
-    color: orange;
+    color: #fb8026;
 }
 
 #formContact textarea{
@@ -1424,8 +1474,8 @@ footer{
 
 #formContact select{
     padding: 9px 10px;
-    border: solid 1px orange;
-    color: orange;
+    border: solid 1px #fb8026;
+    color: #fb8026;
     width: 260px;
 }
 
@@ -1436,14 +1486,14 @@ footer{
 #formContact input[type="submit"]{
     transition: background-color 0.2s ease;
     color: white;
-    background: #fb9838;
+    background: #fb8026;
     width: 80px;
     display: block;
     margin: auto;
 }
 
 #formContact input[type="submit"]:hover{
-    background-color: #ffc681;
+    background-color: #a54c0a;
 }
 
 ::placeholder {

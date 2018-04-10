@@ -197,7 +197,12 @@ $subcategory = array(
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 1",
         AUTHOR => 'Auteur aaa',
-        CODE => "",
+        CODE => "<div id=\"outerspace\">
+                    <div class=\"rocket\">
+                        <div><!-- rocket --></div>
+                        .rocket
+                    </div>#outerspace
+                 </div>",
     ),
 
     '32' => array(
