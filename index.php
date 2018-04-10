@@ -26,22 +26,21 @@
             </nav>
         </header>
         <main>
-            <h1>Welcome</h1>
             <div id="wrapper">
-           <<div id="example1">
-
-                <figure>
+                <div id="banner">
+                    <img src="images/banner.png" alt="banner" id="bannercss">
+                </div>
+                <h1>Check out our pens</h1>
+                <div id="example1">
+                    <figure>
                     <img src="images/bird.png" alt="Bird Example CSS"  id="bird">
                     <figcaption>Example 1 - A view of the pulpit rock in Norway.</figcaption>
-                    <span><a class="fas fa-heart"></a></span>
+                    <span>Blanca Leyva</span>
                 </figure>
+                </div>
 
 
 
-
-
-
-            </div>
         </main>
         <footer>
             <div id="divfoot1">

@@ -44,8 +44,8 @@ header li:last-child{
     font-size: 26px;
     width: 54px;
     position: absolute;
-    top: 10px;
-    right: 51px;
+    top: 6px;
+    right: 56px;
 }
 .fa-heart{
     color: white;
@@ -53,8 +53,41 @@ header li:last-child{
 /*END OF THE HEADER*/
 
 /*START MAIN INDEX*/
-figure{
-    background-color: #bd611d;
+#bannercss{
+    width: 100%;
+}
+#example1{
+    margin: auto;
+    display: block;
+    width: 33%;
+    background-color: #f9af78c7;
+    text-align: center;
+    box-shadow: 10px -4px 17px #fb8026;
+}
+
+#bird{
+    width:111.1%;
+}
+figcaption{
+    display: flex;
+    flex-flow: row;
+}
+#heart1{
+    padding-left: 386px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
+h1 {
+    background-color: beige;
+    grid-area: text;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 20vmin;
+    margin: 0;
+    padding: 30px;
+    color: #f1ba11;
+    text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #ed880b59;
+    text-align: center;
 }
 
 
