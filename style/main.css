@@ -81,6 +81,66 @@ main{
     margin: 40px 100px 100px;
 }
 /*START MAIN INDEX*/
+h1 {
+    grid-area: text;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 21vmin;
+    margin: 0;
+    color: #f1ba11;
+    text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #ed880b59;
+    text-align: center
+}
+#emoji{
+    margin-bottom: -14px;
+    width: 112px;
+    margin-left: 30px;
+}
+
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes h1 {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+h1{
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: h1;
+    animation-name: h1;
+}
+
+
+h1 {
+
+    transform-origin: 50% 0%;
+    animation:h1 .5s ease-in;
+}
+
+/*EMD OF THE H1 ANIMATION*/
 
 #example1{
     width: 600px;
@@ -89,6 +149,11 @@ main{
     margin:auto;
     margin-top: 50px;
     min-width: 300px;
+}
+h5{
+    color: darkorange;
+    text-align: center;
+    font-size: 40px;
 }
 
 #labtitles{
@@ -1434,6 +1499,7 @@ footer{
 }
 
 /********* FORM CSS **********/
+
 #formContact{
     width: 500px;
     margin: 0 auto;
@@ -1464,7 +1530,7 @@ footer{
     border: solid 1px orange;
     width: 260px;
     padding: 10px 10px;
-    color: #fb8026;
+    color: orange;
 }
 
 #formContact textarea{
@@ -1474,13 +1540,13 @@ footer{
 
 #formContact select{
     padding: 9px 10px;
-    border: solid 1px #fb8026;
-    color: #fb8026;
+    border: solid 1px orange;
+    color: orange;
     width: 260px;
 }
 
 #formContact option{
-   font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 #formContact input[type="submit"]{
@@ -1509,7 +1575,9 @@ footer{
     color: orange;
 }
 
-
+.invalide{
+    background-color: #ff3e3e !important;
+}
 
 
 

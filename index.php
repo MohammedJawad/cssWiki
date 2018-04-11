@@ -1,8 +1,22 @@
 <?php
 require_once 'views/page_top.php';
 ?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>cssWiki</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="style/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
+</head>
+    <body>
+
         <main>
-            <h1>Bienvenue</h1>
+            <h1>Bienvenue<img src="images/hi.png" alt="emoji-hi" id="emoji"></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Eu vis dico
@@ -10,28 +24,30 @@ require_once 'views/page_top.php';
                 concludaturque vix, nullam legere dissentiet has no, quando aperiri ea mea. Ad nec omnium laoreet. Et vero placerat eum, an quis tempor epicuri quo,
                 ad aeterno persius duo.
             </p>
-            <a href="catalogue.php">
-            <div id="example1">
-                <div class="wrapper">
-                    <div class="sun"></div>
-                    <div class="cloud">
-                        <div class="cloud1">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+
+            <h5>Animation Du Jour</h5>
+            <div id="example1"><a href="catalogue.php">
+
+                    <div class="wrapper">
+                        <div class="sun"></div>
+                        <div class="cloud">
+                            <div class="cloud1">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="cloud1 c_shadow">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="cloud1 c_shadow">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
 
                     <div class="cloud_s">
                         <div class="cloud1">

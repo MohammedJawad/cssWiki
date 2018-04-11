@@ -4,7 +4,7 @@ require_once 'db/data.php';
 
 ?>
     <main class="onglet">
-        <h1>Catalogue</h1>
+        <h2>Catalogue</h2>
         <form method="get">
 
         <?php foreach ($category as $id => $item) { ?>
