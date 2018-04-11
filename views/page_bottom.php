@@ -1,22 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bleyvamo
- * Date: 05/04/2018
- * Time: 10:10 PM
- */
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8"/>
-    <title>cssWiki</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <link href="style/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-
-</head>
-<body>
 
 <footer>
     <div id="divfoot1">

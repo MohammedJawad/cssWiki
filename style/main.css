@@ -11,10 +11,36 @@ body{
     font-family: 'Karla', sans-serif;
 }
 
+/*Système de grille*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 header{
     display: flex;
     box-sizing: border-box;
-    background-color:#FB8C3B;
+    background-color:#fb8026;
 }
 #logo{
     width: 218px;
@@ -30,7 +56,6 @@ header{
     text-align: center;
     margin-top: 35px;
 }
-
 header a {
     color:white;
     margin: 7px;
@@ -52,74 +77,44 @@ header li:last-child{
 }
 /*END OF THE HEADER*/
 
-
+main{
+    margin: 40px 100px 100px;
+}
 /*START MAIN INDEX*/
-#bannercss{
-    width: 100%;
-}
+
 #example1{
-    width: 406px;
-    /* border: 1px solid #ccc; */
-    height: 285px;
-    margin: auto;
-    margin: auto;
-    display: block;
-    width: 44.5%;
-    /* background-color: #f9af78c7; */
-    text-align: center;
-    /*box-shadow: -1px -10px 17px #fb8026;*/
+    width: 600px;
+    border: 1px solid #ccc;
+    height: 300px;
+    margin:auto;
+    margin-top: 50px;
+    min-width: 300px;
 }
-
-#bird{
-width:111.1%;
-}
-figcaption{
-display: flex;
-flex-flow: row;
-}
-#heart1{
-padding-left: 386px;
-display: flex;
-flex-direction: row-reverse;
-}
-
-h1 {
-/*background-color: beige;
-grid-area: text;
-font-family: 'Sarpanch', sans-serif;
-font-size: 20vmin;
-margin: 0;
-padding: 30px;
-color: #f1ba11;
-text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #ed880b59;
-text-align: center;*/
-}
-
 
 #labtitles{
-margin: auto;
-background: #fff8f1;
-width: 600px;
+    margin: auto;
+    background: #fff8f1;
+    width: 600px;
 }
 
 h3{
-display: inline-block;
-margin: 10px 0 10px;
-margin-left: 1%;
-color:#fb8026;
+    display: inline-block;
+    margin: 10px 0 10px;
+    margin-left: 1%;
+    color:#fb8026;
 }
 #labtitles img{
-float: right;
-margin-right: 1%;
-margin-top: 10px;
+    float: right;
+    margin-right: 1%;
+    margin-top: 10px;
 }
 
 h4{
-margin-top: 0;
-padding-bottom: 10px;
-margin-left: 1%;
-font-size: 12px;
-font-weight: normal;
+    margin-top: 0;
+    padding-bottom: 10px;
+    margin-left: 1%;
+    font-size: 12px;
+    font-weight: normal;
 }
 /*START MAIN EXECUTER*/
 
@@ -1081,7 +1076,7 @@ tabcontent2{
 }
 .floor::before{
     content:"";
-
+    background-color:content:"";
     background-color:#1E2D49;
     width:200px;
     height:50px;
@@ -1305,17 +1300,84 @@ div.rocket div {
 
 }
 
+/*START MAIN CATALOGUE*/
+
+.wrapper2{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
 
 
 
+#labtitlescat{
+    background: #fff8f1;
+    width: 100%;
+}
+
+#labtitlescat img{
+    float: right;
+    margin-top: 10px;
+    margin-right: 1%;
+}
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+.onglet input {
+    display: none;
+}
+
+.onglet label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+.onglet label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
 
 
+.onglet label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.onglet input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid #fb8026;
+    border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+    display: block;
+}
+
+#content1 a{
+
+    width: 100%;
+    height: 100%;
+}
 
 /*END OF THE MAIN*/
 
 
-
-/*START MAIN footer*/
+/*START footer*/
 
 footer{
     width:100%;
@@ -1443,7 +1505,7 @@ footer{
     color: orange;
 }
 
-:-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder { /* Microsoft Edge */
     color: orange;
 }
 
