@@ -16,7 +16,7 @@ require_once 'views/page_top.php';
     <body>
 
         <main>
-            <h1>Bienvenue<img src="images/hi.png" alt="emoji-hi" id="emoji"></h1>
+            <h1>Bienvenue</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Eu vis dico
@@ -25,7 +25,7 @@ require_once 'views/page_top.php';
                 ad aeterno persius duo.
             </p>
 
-            <h5>Animation Du Jour</h5>
+            <img src="images/titulo.png" alt="animation" class="title">
             <div id="example1"><a href="catalogue.php">
 
                     <div class="wrapper">

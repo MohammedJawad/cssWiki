@@ -13,7 +13,8 @@
     <body>
         <header>
             <img src="images/csswiki_logo2.png" href="index.php" alt="company.logo" id="logo">
-            <nav id="main-menu">
+
+              <nav id="main-menu">
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="catalogue.php">Catalogue</a></li>
