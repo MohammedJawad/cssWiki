@@ -36,7 +36,7 @@ $vld = array(
     ),
 );
 
-$en_reception = array_key_exists(F_NOM, $_POST) && array_key_exists(F_COURRIEL, $_POST) && array_key_exists(F_CATEGORIE, $_POST) && array_key_exists(F_MESSAGE, $_POST);
+$en_reception = ('POST' === $_SERVER['REQUEST_METHOD']);
 
 if($en_reception){
     //Validation nom
@@ -48,8 +48,8 @@ if($en_reception){
     $vld[F_COURRIEL][VK_IS_VALID] = $vld[F_COURRIEL][VK_VALUE];
 
     //validation catégorie
-    $vld[F_CATEGORIE][VK_VALUE] = $_POST[F_CATEGORIE];
-    $vld[F_CATEGORIE][VK_IS_VALID] = $_POST[F_CATEGORIE] !== '-1';
+    //$vld[F_CATEGORIE][VK_VALUE] = $_POST[F_CATEGORIE];
+    $vld[F_CATEGORIE][VK_IS_VALID] = !filter_input(INPUT_POST, F_CATEGORIE, FILTER_VALIDATE_FLOAT);
 
     //validation textarea
     $vld[F_MESSAGE][VK_VALUE] = filter_input(INPUT_POST, F_MESSAGE, FILTER_SANITIZE_STRING);
@@ -77,7 +77,7 @@ if($en_reception){
                 <div>
                     <label class="<?= ($en_reception && ! $vld[F_CATEGORIE][VK_IS_VALID]) ? 'invalide' : '' ?>" for="selectCategorie">Catégorie</label>
                     <select id="selectCategorie">
-                        <option value="-1">Choisissez...</option>
+                        <option value="-1" <?= array_key_exists(F_CATEGORIE, $_POST) && $_POST[F_CATEGORIE] === "-1" ? ATTR_SELECTED : '' ?>>Choisissez...</option>
                         <option value="bouton">Bouton</option>
                         <option value="animation">Animation</option>
                         <option value="transition">Transition</option>
@@ -85,7 +85,7 @@ if($en_reception){
                 </div>
 
                 <div>
-                    <label class="<?= ($en_reception && ! $vld[F_MESSAGE][VK_IS_VALID]) ? 'invalide' : '' ?>" for="codeTexte">Comments</label>
+                    <label class="<?= ($en_reception && ! $vld[F_MESSAGE][VK_IS_VALID]) ? 'invalide' : '' ?>" for="codeTexte">HTML/CSS</label>
                     <textarea id="codeTexte" placeholder="Insérer votre code ici"></textarea>
                 </div>
             </fieldset>
