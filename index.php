@@ -24,7 +24,9 @@ require_once 'views/page_top.php';
                 concludaturque vix, nullam legere dissentiet has no, quando aperiri ea mea. Ad nec omnium laoreet. Et vero placerat eum, an quis tempor epicuri quo,
                 ad aeterno persius duo.
             </p>
-
+<div id="box-01">
+            <img src="images/titulo.png" alt="animation" class="title">
+</div>
             <div id="example1"><a href="catalogue.php">
 
                     <div class="wrapper">

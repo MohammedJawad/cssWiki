@@ -168,6 +168,10 @@ body{
     margin-bottom: -45px;
     padding-left: 370px;
 }
+#box-01{
+    height: 60px;
+    background-color: floralwhite;
+}
 /*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
     #example1 {
         width: 600px;
