@@ -56,9 +56,6 @@ if($en_reception){
     $vld[F_MESSAGE][VK_IS_VALID] = strlen($vld[F_MESSAGE][VK_VALUE]) >= 30;
 
 }
-var_dump($_POST);
-
-
 
 ?>
 

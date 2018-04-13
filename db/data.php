@@ -4,8 +4,11 @@ define('NAME_CATEGORY','Categorie');
 define('NAME_SUBCATEGORY','Nom');
 define('AUTHOR','Auteur: ');
 define('CODE','Code html');
-
-
+define('OP_NAME', 'op');
+define('OP_AJOUT', 'add');
+define('NB_WISH', 'Total');
+define('IDPROD', 'Produit');
+define ('SESS_FAVORITE', 'SESS_FAVORITE');
 
 
 

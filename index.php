@@ -25,7 +25,6 @@ require_once 'views/page_top.php';
                 ad aeterno persius duo.
             </p>
 
-            <img src="images/titulo.png" alt="animation" class="title">
             <div id="example1"><a href="catalogue.php">
 
                     <div class="wrapper">
