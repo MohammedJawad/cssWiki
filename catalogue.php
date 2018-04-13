@@ -2,28 +2,54 @@
 require_once 'views/page_top.php';
 require_once 'db/data.php';
 
+if (PHP_SESSION_NONE  === session_status()) {
+    session_start();
+}
+if ( ! array_key_exists(SESS_FAVORITE, $_SESSION)) {
+    $_SESSION[SESS_FAVORITE] = array();
+}
+
+$wl =& $_SESSION[SESS_FAVORITE];
+
+if (array_key_exists(OP_NAME, $_GET)) {
+    if ($_GET[OP_NAME] === OP_AJOUT) {
+
+        $validate = 0;
+
+        foreach ($_SESSION[SESS_FAVORITE] as $idwl => $itemwl) {
+            if($_GET[IDPROD] == $itemwl){
+                $validate = 1;
+                unset($wl[$idwl]);
+            }
+        }
+
+        if($validate == 0){
+            $wl[] = $_GET[IDPROD];
+        }
+    }
+}
+
+if ( ! array_key_exists(NB_WISH, $_SESSION)) {
+    $_SESSION[NB_WISH] = 0;
+    if ( ! array_key_exists(IDPROD, $_SESSION)) {
+        $_SESSION[IDPROD] = 0;
+    }
+}
+
+if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
+        $_SESSION[NB_WISH]++;
+        $_SESSION[IDPROD] = $_GET[IDPROD];
+    }
+
 ?>
     <main class="onglet">
-        <h2>Catalogue</h2>
+        <h1>Catalogue</h1>
         <form method="get">
 
         <?php foreach ($category as $id => $item) { ?>
             <input id='tab<?= $id ?>' type="radio" name="tabs" value="<?= $id ?>" <?php if($id == "1") echo "checked"; ?> />
             <label for='tab<?= $id ?>'><?= $item[NAME_CATEGORY] ?></label>
         <?php } ?>
-
-
-<!--           -->
-
-   <!--    <input id="tab1" type="radio" name="tabs" checked value="1">
-        <label for="tab1"><?/*= $category[1][NAME_CATEGORY] */?></label>
-
-        <input id="tab2" type="radio" name="tabs" value="2">
-        <label for="tab2"><?/*= $category[2][NAME_CATEGORY] */?></label>
-
-        <input id="tab3" type="radio" name="tabs" value="3">
-        <label for="tab3"><?/*= $category[3][NAME_CATEGORY] */?></label>
--->
 
     <section id="content1" class="row">
             <?php foreach ($subcategory as $id => $item) {
@@ -34,7 +60,21 @@ require_once 'db/data.php';
                     </div>
                     <div id="labtitlescat">
                         <h3><?= $item[NAME_SUBCATEGORY]?></h3>
-                        <a href=""><img src="images/like.png" alt=""></a>
+                        <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
+
+                            <?php if ($_SESSION[NB_WISH] == 0){ ?>
+                                <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
+                            <?php } else {
+                                $img = 0;
+                                foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
+                                    if($id == $itemfav) { $img = 1  ?>
+                                        <img src="images/like.png" alt="" id="imglike<?= $id ?>">
+                                    <?php }}
+                                if($img == 0){?>
+                                    <img src="images/likevide.png" alt="" id="imglike<?= $id ?>"
+                                <?php  }}
+                            ?>
+                        </a>
                         <h4><?= $item[AUTHOR] ?></h4>
                     </div>
                 </div>
