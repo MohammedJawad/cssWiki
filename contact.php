@@ -61,6 +61,7 @@ if($en_reception){
 
 
     <main>
+        <img src="images/banner.png" alt="banner" id="banner">
         <form id="formContact" method="post">
             <fieldset>
                 <div>
@@ -84,7 +85,7 @@ if($en_reception){
                 </div>
 
                 <div>
-                    <label class="<?= ($en_reception && ! $vld[F_MESSAGE][VK_IS_VALID]) ? 'invalide' : '' ?>" for="codeTexte">CSS</label>
+                    <label class="<?= ($en_reception && ! $vld[F_MESSAGE][VK_IS_VALID]) ? 'invalide' : '' ?>" for="codeTexte">Comments</label>
                     <textarea id="codeTexte" placeholder="Insérer votre code ici"></textarea>
                 </div>
             </fieldset>

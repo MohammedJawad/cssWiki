@@ -1579,7 +1579,7 @@ body{
 
     #formContact input, #formContact textarea {
         border: solid 1px orange;
-        width: 260px;
+        width: 420px;
         padding: 10px 10px;
         color: orange;
     }
@@ -1593,7 +1593,7 @@ body{
         padding: 9px 10px;
         border: solid 1px orange;
         color: orange;
-        width: 260px;
+        width: 340px;
     }
 
     #formContact option {
@@ -1629,7 +1629,11 @@ body{
     .invalide {
         background-color: #ff3e3e !important;
     }
-
+#banner{
+width: 117.3%;
+    margin-left: -100px;
+    margin-top: -40px;
+}
     /******** END FORM CSS **********/
     #divfoot2 {
         background-color: #fb8026;
