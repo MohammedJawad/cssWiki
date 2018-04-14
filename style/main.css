@@ -968,7 +968,10 @@ body{
     /***********END MAIN INDEX FOR DESKTOP*************/
 
     /* START CATALOGUE PAGE FOR DESKTOP */
-    #totalexec {
+
+    /********* TESTING CODE MODIFIED *********/
+
+    #preview-form {
         min-width: 430px;
     }
 
@@ -978,20 +981,32 @@ body{
         padding-bottom: 30px;
     }
 
-    #divexec {
+    #preview-comment {
         width: 45%;
         border: 1px solid #ccc;
         height: 300px;
         padding: 6px 12px;
     }
 
-    #divcodes {
+    #preview-form-comment {
         width: 45%;
         height: 300px;
         border: 1px solid #ccc;
         color: #fb8026;
 
     }
+
+    .CodeMirror {
+        height: 300px;
+        border: 1px solid #ccc;
+        color: #fb8026;
+        width: 45%;
+        position: relative;
+        overflow: hidden;
+        background: white;
+    }
+
+    /********* END TESTING CODE MODIFIED *********/
 
     .tab {
         overflow: hidden;

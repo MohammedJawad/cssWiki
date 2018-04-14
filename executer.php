@@ -4,40 +4,31 @@ echo "<script> window.onload = function() {
      openCode(event, 'cssid');
  }; </script>";
 
+//Initial
+$comment = null;
+
+//Si form est soumis
+if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['preview-form-comment'])){
+    $comment = $_POST['preview-form-comment'];
+}
+
+
 ?>
 <main>
     <h2>Button</h2>
-    <div id="totalexec">
+    <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <div id="wrapexec">
-            <div id="divexec">
-                <button class="button button1">Button</button>
-                <button class="button button2">Button</button>
-                <button class="button button3">Button</button>
-                <button class="button button5">Button</button>
-            </div>
-            <div id="divcodes">
-                <div class="tab">
-                    <button class="tablinks" onclick="openCode(event, 'cssid')">CSS</button>
-                    <button class="tablinks" onclick="openCode(event, 'htmlid')">HTML</button>
-                </div>
-                <div id="cssid" class="tabcontent">
-                    <p>Exemple code css.</p>
-                </div>
-                <div id="htmlid" class="tabcontent">
-                    <p>Exemple code html.</p>
-                </div>
-            </div>
+            <div id="preview-comment"><?php echo $comment; ?></div>
+            <textarea class="codemirror-textarea" name="preview-form-comment" id="preview-form-comment"><?php echo $comment; ?></textarea>
         </div>
         <div id="divbuttonexec">
-            <button type="button" class="buttonexec">
-                Tester
-            </button>
+            <input type="submit" class="buttonexec" value="Tester">
             <a href="" class="buttonexec"><img src="images/like.png" alt=""></a>
-            <button type="button" class="buttonexec">
+            <button type="button" class="buttonexec" name="preview-form-submit" id="preview-form-submit">
                 Copier
             </button>
         </div>
-    </div>
+    </form>
 </main>
     <script>
         function openCode(evt, codeName) {
@@ -54,4 +45,7 @@ echo "<script> window.onload = function() {
             evt.currentTarget.className += " active";
         }
     </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="plugin/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="js/default.js"></script>
 <?php require_once 'views/page_bottom.php';
