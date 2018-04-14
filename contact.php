@@ -1,6 +1,7 @@
 <?php
 require_once 'views/page_top.php';
 
+define ('ATTR_SELECTED',    'selected="selected"');
 
 define('F_NOM', 'F_NOM');
 define('F_COURRIEL', 'F_COURRIEL');
@@ -48,7 +49,7 @@ if($en_reception){
     $vld[F_COURRIEL][VK_IS_VALID] = $vld[F_COURRIEL][VK_VALUE];
 
     //validation catégorie
-    //$vld[F_CATEGORIE][VK_VALUE] = $_POST[F_CATEGORIE];
+    $vld[F_CATEGORIE][VK_VALUE] = $_POST[F_CATEGORIE];
     $vld[F_CATEGORIE][VK_IS_VALID] = !filter_input(INPUT_POST, F_CATEGORIE, FILTER_VALIDATE_FLOAT);
 
     //validation textarea
@@ -56,6 +57,7 @@ if($en_reception){
     $vld[F_MESSAGE][VK_IS_VALID] = strlen($vld[F_MESSAGE][VK_VALUE]) >= 30;
 
 }
+
 
 ?>
 
@@ -66,27 +68,27 @@ if($en_reception){
             <fieldset>
                 <div>
                     <label class="<?= ($en_reception && ! $vld[F_NOM][VK_IS_VALID]) ? 'invalide' : '' ?>" for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" placeholder="Ex: Bob">
+                    <input type="text" name="<?= F_NOM ?>" id="nom" placeholder="Ex: Bob" value="<?= ($en_reception) ? $vld[F_NOM][VK_VALUE] : '' ?>">
                 </div>
 
                 <div>
                     <label class="<?= ($en_reception && ! $vld[F_COURRIEL][VK_IS_VALID]) ? 'invalide' : '' ?>" for="courriel">Courriel</label>
-                    <input type="email" name="courriel" id="courriel" placeholder="exemple@exemple.com">
+                    <input type="email" name="<?= F_COURRIEL ?>" id="courriel" placeholder="exemple@exemple.com" value="<?= ($en_reception) ? $vld[F_COURRIEL][VK_VALUE] : '' ?>">
                 </div>
 
                 <div>
                     <label class="<?= ($en_reception && ! $vld[F_CATEGORIE][VK_IS_VALID]) ? 'invalide' : '' ?>" for="selectCategorie">Catégorie</label>
-                    <select id="selectCategorie">
+                    <select id="selectCategorie" name="<?= F_CATEGORIE ?>">
                         <option value="-1" <?= array_key_exists(F_CATEGORIE, $_POST) && $_POST[F_CATEGORIE] === "-1" ? ATTR_SELECTED : '' ?>>Choisissez...</option>
-                        <option value="bouton">Bouton</option>
-                        <option value="animation">Animation</option>
-                        <option value="transition">Transition</option>
+                        <option value="bouton" <?= array_key_exists(F_CATEGORIE, $_POST) && $_POST[F_CATEGORIE] === "bouton" ? ATTR_SELECTED : '' ?>>Bouton</option>
+                        <option value="animation" <?= array_key_exists(F_CATEGORIE, $_POST) && $_POST[F_CATEGORIE] === "animation" ? ATTR_SELECTED : '' ?>>Animation</option>
+                        <option value="transition" <?= array_key_exists(F_CATEGORIE, $_POST) && $_POST[F_CATEGORIE] === "transition" ? ATTR_SELECTED : '' ?>>Transition</option>
                     </select>
                 </div>
 
                 <div>
                     <label class="<?= ($en_reception && ! $vld[F_MESSAGE][VK_IS_VALID]) ? 'invalide' : '' ?>" for="codeTexte">HTML/CSS</label>
-                    <textarea id="codeTexte" placeholder="Insérer votre code ici"></textarea>
+                    <textarea name="<?= F_MESSAGE ?>" id="codeTexte" placeholder="Insérer votre code ici"><?= ($en_reception) ? $vld[F_MESSAGE][VK_VALUE] : '' ?></textarea>
                 </div>
             </fieldset>
             <input type="submit" value="Envoyer">
