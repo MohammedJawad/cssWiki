@@ -76,11 +76,13 @@ body{
     }
 
     .row:after {
-        content: "";
-        clear: both;
-        display: block;
+         content: "";
+         clear: both;
+         display: block;
+     }
+    body{
+        background-color: red;
     }
-
     header{
         background-color: #fb8026;
         width:100%;
@@ -1861,6 +1863,9 @@ body{
 
     }
     /*HEADER FOR MOBILE VERSION*/
+    body{
+        background-color: blue;
+    }
     header {
         display: none;
         /* display: flex;
