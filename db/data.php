@@ -1,6 +1,8 @@
 <?php
 define('NAME_CATEGORY','Categorie');
 
+define('IMAGE', 'image');
+define('ALT', 'alt');
 define('NAME_SUBCATEGORY','Nom');
 define('AUTHOR','Auteur: ');
 define('CODE','Code html');
@@ -28,23 +30,104 @@ $category = array(
 
 $subcategory = array(
     '11' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 1",
         AUTHOR => 'Auteur a',
-        CODE => "<button class=\"button button1\">Button</button>
-                <button class=\"button button2\">Button</button>
-                <button class=\"button button3\">Button</button>
-                <button class=\"button button5\">Button</button>",
+        CODE => "<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+</style>
+</head>
+<body>
+
+<h2>Colored Button Borders</h2>
+<p>Use the border property to add a border to the button:</p>
+
+<button class=\"button button1\">Green</button>
+<button class=\"button button2\">Blue</button>
+<button class=\"button button3\">Red</button>
+<button class=\"button button4\">Gray</button>
+<button class=\"button button5\">Black</button>
+
+</body>
+</html>",
     ),
 
     '12' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 2",
         AUTHOR => 'Auteur b',
-        CODE => "",
+        CODE => "<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
+<body>
+
+<div class=\"w3-container\">
+<h2>Button Bars</h2>
+<p>Buttons can be grouped together without a space between them by using <strong>w3-bar-item</strong> class:</p>
+<div class=\"w3-bar\">
+  <button class=\"w3-bar-item w3-button w3-black\">Button</button>
+  <button class=\"w3-bar-item w3-button w3-teal\">Button</button>
+  <button class=\"w3-bar-item w3-button w3-red\">Button</button>
+</div>
+
+</div>
+</body>
+</html>",
     ),
 
     '13' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 3",
         AUTHOR => 'Auteur c',
@@ -52,6 +135,8 @@ $subcategory = array(
     ),
 
     '14' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 4",
         AUTHOR => 'Auteur d',
@@ -59,6 +144,8 @@ $subcategory = array(
     ),
 
     '15' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 5",
         AUTHOR => 'Auteur e',
@@ -66,6 +153,8 @@ $subcategory = array(
         ),
 
     '16' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 6",
         AUTHOR => 'Auteur f',
@@ -73,6 +162,8 @@ $subcategory = array(
     ),
 
     '17' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 7",
         AUTHOR => 'Auteur g',
@@ -80,12 +171,16 @@ $subcategory = array(
     ),
 
     '18' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 8",
         AUTHOR => 'Auteur h',
         CODE => "",
     ),
     '19' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "1",
         NAME_SUBCATEGORY => "Boutons 9",
         AUTHOR => 'Auteur i',
@@ -93,6 +188,8 @@ $subcategory = array(
     ),
 
     '21' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 1",
         AUTHOR => 'Auteur aa',
@@ -143,6 +240,8 @@ $subcategory = array(
     ),
 
     '22' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 2",
         AUTHOR => 'Auteur bb',
@@ -150,6 +249,8 @@ $subcategory = array(
     ),
 
     '23' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 3",
         AUTHOR => 'Auteur cc',
@@ -157,6 +258,8 @@ $subcategory = array(
     ),
 
     '24' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 4",
         AUTHOR => 'Auteur dd',
@@ -164,6 +267,8 @@ $subcategory = array(
     ),
 
     '25' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 5",
         AUTHOR => 'Auteur ee',
@@ -171,6 +276,8 @@ $subcategory = array(
     ),
 
     '26' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 6",
         AUTHOR => 'Auteur ff',
@@ -178,6 +285,8 @@ $subcategory = array(
     ),
 
     '27' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 7",
         AUTHOR => 'Auteur gg',
@@ -185,18 +294,24 @@ $subcategory = array(
     ),
 
     '28' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 8",
         AUTHOR => 'Auteur hh',
         CODE => "",
     ),
     '29' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 9",
         AUTHOR => 'Auteur ii',
         CODE => "",
     ),
     '31' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 1",
         AUTHOR => 'Auteur aaa',
@@ -209,6 +324,8 @@ $subcategory = array(
     ),
 
     '32' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 2",
         AUTHOR => 'Auteur bbb',
@@ -216,6 +333,8 @@ $subcategory = array(
     ),
 
     '33' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 3",
         AUTHOR => 'Auteur ccc',
@@ -223,6 +342,8 @@ $subcategory = array(
     ),
 
     '34' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 4",
         AUTHOR => 'Auteur ddd',
@@ -230,6 +351,8 @@ $subcategory = array(
     ),
 
     '35' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 5",
         AUTHOR => 'Auteur eee',
@@ -237,6 +360,8 @@ $subcategory = array(
     ),
 
     '36' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 6",
         AUTHOR => 'Auteur fff',
@@ -244,6 +369,8 @@ $subcategory = array(
     ),
 
     '37' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 7",
         AUTHOR => 'Auteur ggg',
@@ -251,6 +378,8 @@ $subcategory = array(
     ),
 
     '38' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 8",
         AUTHOR => 'Auteur hhh',
@@ -258,11 +387,12 @@ $subcategory = array(
     ),
 
     '39' => array(
+        IMAGE => "bouton1.png",
+        ALT => "image bouton1",
         NAME_CATEGORY => "3",
         NAME_SUBCATEGORY => "Transitions 9",
         AUTHOR => 'Auteur iii',
         CODE => "",
     ),
-);
 
-?>
+);

@@ -129,7 +129,7 @@ body{
         margin: 40px 100px 100px;
     }
     /*START ANIMATION FOR H1*/
-    h1 {
+    .animTitle {
         grid-area: text;
         font-family: 'Libre Franklin', sans-serif;
         font-size: 100px;
@@ -194,6 +194,8 @@ body{
         margin-left: 1%;
         color: #fb8026;
     }
+
+
 
     #labtitles img {
         float: right;
@@ -961,7 +963,7 @@ body{
             opacity: 0;
         }
         100% {
-            oapcity: 0;
+            opacity: 0;
         }
     }
     /*END OF ANIMATION 1-INDEX */
@@ -986,6 +988,7 @@ body{
         border: 1px solid #ccc;
         height: 300px;
         padding: 6px 12px;
+        color: #fb8026;
     }
 
     #preview-form-comment {
@@ -999,7 +1002,7 @@ body{
     .CodeMirror {
         height: 300px;
         border: 1px solid #ccc;
-        color: #fb8026;
+        color: #fb8026; !important;
         width: 45%;
         position: relative;
         overflow: hidden;
@@ -1442,6 +1445,10 @@ body{
         border: 1px solid #ccc;
     }
 
+    .wrapper2 img{
+        width: 100%;
+    }
+
     #labtitlescat {
         background: #fff8f1;
         width: 100%;
@@ -1454,7 +1461,9 @@ body{
     }
 
     #labtitlescat a {
-        text-decoration: none !important;
+        color: #fb8026;
+        font-size: 1.3em;
+        font-weight: bold;
     }
 
 

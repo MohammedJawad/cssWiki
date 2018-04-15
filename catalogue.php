@@ -41,9 +41,10 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
         $_SESSION[IDPROD] = $_GET[IDPROD];
     }
 
+
 ?>
     <main class="onglet">
-        <h1>Catalogue</h1>
+        <h1 class="animTitle">Catalogue</h1>
         <form method="get">
 
         <?php foreach ($category as $id => $item) { ?>
@@ -56,11 +57,14 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                 if($item[NAME_CATEGORY] == "1"){ ?>
                 <div class="col-4">
                     <div class="wrapper2" id="divcat">
-                    <?= $item[CODE] ?>
+                    <img src="images/<?= $item[IMAGE] ?>" alt="<?= $item[ALT] ?>">
                     </div>
                     <div id="labtitlescat">
-                        <h3><?= $item[NAME_SUBCATEGORY]?></h3>
-                        <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
+                        <a href="executer.php<?= '?', IDPROD, '=', $id ?>" id="img<?= $id ?>"><?= $item[NAME_SUBCATEGORY]?></a>
+
+                        <!-- A RETESTER! -->
+
+                        <!--<a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
 
                             <?php if ($_SESSION[NB_WISH] == 0){ ?>
                                 <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
@@ -74,7 +78,8 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                                     <img src="images/likevide.png" alt="" id="imglike<?= $id ?>"
                                 <?php  }}
                             ?>
-                        </a>
+                        </a> -->
+
                         <h4><?= $item[AUTHOR] ?></h4>
                     </div>
                 </div>
@@ -85,11 +90,11 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                 if($item[NAME_CATEGORY] == "2"){ ?>
             <div class="col-4">
                 <div class="wrapper2" id="divcat">
-                            <?= $item[CODE] ?>
+                    <img src="images/<?= $item[IMAGE] ?>" alt="<?= $item[ALT] ?>">
                 </div>
                 <div id="labtitlescat">
                     <h3><?= $item[NAME_SUBCATEGORY]?></h3>
-                    <a href=""><img src="images/like.png" alt=""></a>
+                    <!--<a href=""><img src="images/like.png" alt=""></a> -->
                     <h4><?= $item[AUTHOR] ?></h4>
                 </div>
             </div>
@@ -101,11 +106,11 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                 if($item[NAME_CATEGORY] == "3"){ ?>
                     <div class="col-4">
                         <div class="wrapper2" id="divcat">
-                            <?= $item[CODE] ?>
+                            <img src="images/<?= $item[IMAGE] ?>" alt="<?= $item[ALT] ?>">
                         </div>
                         <div id="labtitlescat">
                             <h3><?= $item[NAME_SUBCATEGORY]?></h3>
-                            <a href=""><img src="images/like.png" alt=""></a>
+                            <!--<a href=""><img src="images/like.png" alt=""></a> -->
                             <h4><?= $item[AUTHOR] ?></h4>
                         </div>
                     </div>
