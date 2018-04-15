@@ -93,8 +93,26 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                     <img src="images/<?= $item[IMAGE] ?>" alt="<?= $item[ALT] ?>">
                 </div>
                 <div id="labtitlescat">
-                    <h3><?= $item[NAME_SUBCATEGORY]?></h3>
-                    <!--<a href=""><img src="images/like.png" alt=""></a> -->
+                    <a href="executer.php<?= '?', IDPROD, '=', $id ?>" id="img<?= $id ?>"><?= $item[NAME_SUBCATEGORY]?></a>
+
+                    <!-- A RETESTER! -->
+
+                    <!--<a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
+
+                            <?php if ($_SESSION[NB_WISH] == 0){ ?>
+                                <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
+                            <?php } else {
+                        $img = 0;
+                        foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
+                            if($id == $itemfav) { $img = 1  ?>
+                                        <img src="images/like.png" alt="" id="imglike<?= $id ?>">
+                                    <?php }}
+                        if($img == 0){?>
+                                    <img src="images/likevide.png" alt="" id="imglike<?= $id ?>"
+                                <?php  }}
+                    ?>
+                        </a> -->
+
                     <h4><?= $item[AUTHOR] ?></h4>
                 </div>
             </div>
@@ -109,8 +127,26 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                             <img src="images/<?= $item[IMAGE] ?>" alt="<?= $item[ALT] ?>">
                         </div>
                         <div id="labtitlescat">
-                            <h3><?= $item[NAME_SUBCATEGORY]?></h3>
-                            <!--<a href=""><img src="images/like.png" alt=""></a> -->
+                            <a href="executer.php<?= '?', IDPROD, '=', $id ?>" id="img<?= $id ?>"><?= $item[NAME_SUBCATEGORY]?></a>
+
+                            <!-- A RETESTER! -->
+
+                            <!--<a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
+
+                            <?php if ($_SESSION[NB_WISH] == 0){ ?>
+                                <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
+                            <?php } else {
+                                $img = 0;
+                                foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
+                                    if($id == $itemfav) { $img = 1  ?>
+                                        <img src="images/like.png" alt="" id="imglike<?= $id ?>">
+                                    <?php }}
+                                if($img == 0){?>
+                                    <img src="images/likevide.png" alt="" id="imglike<?= $id ?>"
+                                <?php  }}
+                            ?>
+                        </a> -->
+
                             <h4><?= $item[AUTHOR] ?></h4>
                         </div>
                     </div>
