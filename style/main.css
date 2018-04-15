@@ -1774,7 +1774,9 @@ body{
     .col-m-12 {
         width: 100%;
     }
-
+body{
+    background-color: green;
+}
     header{
         background-color: #fb8026;
         width:100%;
