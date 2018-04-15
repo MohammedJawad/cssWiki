@@ -984,23 +984,24 @@ body{
     }
 
     #preview-comment {
+        overflow: scroll;
         width: 45%;
         border: 1px solid #ccc;
-        height: 300px;
+        height: 480px;
         padding: 6px 12px;
         color: #fb8026;
     }
 
     #preview-form-comment {
         width: 45%;
-        height: 300px;
+        height: 480px;
         border: 1px solid #ccc;
         color: #fb8026;
 
     }
 
     .CodeMirror {
-        height: 300px;
+        height: 480px;
         border: 1px solid #ccc;
         color: #fb8026; !important;
         width: 45%;
