@@ -81,45 +81,50 @@ body{
         display: block;
     }
 
-    header {
-        display: flex;
-        box-sizing: border-box;
+    header{
         background-color: #fb8026;
+        width:100%;
+        height:97px;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:100;
+        border-bottom: 5px solid #ffffff;
+    }
+    #main-menu ul{
+        list-style:none;
+    }
+    #main-menu li{
+        display:inline-block;
+        float:left;
+        padding: 10px;
+    }
+    #main-menu{
+        padding:20px;
+    }
+    header a{
+        font-family: 'arial';
+        color:#FFF;
+        text-decoration:none;
+
+    }
+    a:hover{
+        cursor: pointer;
     }
 
     #logo {
+        margin-top:-12px;
+        float:left;
+        display:block;
         width: 218px;
     }
-
-    #main-menu ul li {
-        padding: -1px;
-        display: inline-block;
-        border-bottom: 0;
-        list-style: none;
-        float: left;
-        text-align: center;
-        margin-top: 35px;
-    }
-
-    header a {
-        color: white;
-        margin: 7px;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: 'arial';
-    }
-
-    header li:last-child {
-
-        font-size: 26px;
-        width: 54px;
-        position: absolute;
-        top: 10px;
-        right: 51px;
-    }
-
     .fa-heart {
+        margin-top:-21px;
+        top: 0;
+        left: 0;
+        float: right;
+        padding-right:50px;
+        font-size: 34px;
         color: white;
     }
 
@@ -130,6 +135,7 @@ body{
     }
     /*START ANIMATION FOR H1*/
     .animTitle {
+        padding-top: 58px;
         grid-area: text;
         font-family: 'Libre Franklin', sans-serif;
         font-size: 100px;
@@ -164,15 +170,15 @@ body{
     }
     /*END OF THE H1 ANIMATION*/
 
-.title{
-    margin-bottom: -45px;
-    padding-left: 370px;
-}
-#box-01{
-    height: 60px;
-    background-color: floralwhite;
-}
-/*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
+    .title{
+        display:block;
+        margin:auto;
+    }
+    #box-01{
+        height: 60px;
+        background-color: floralwhite;
+    }
+    /*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
     #example1 {
         width: 600px;
         border: 1px solid #ccc;
@@ -1592,33 +1598,38 @@ body{
     }
 
     #formContact label {
+        border-radius: 4px 0px 0px 4px;
+        display: inline-block;
         float: left;
         height: 37px;
         color: white;
         text-align: center;
         padding: 7px 0;
         width: 80px;
-        display: inline-block;
         background-color: #fb8026;
     }
 
     #formContact input, #formContact textarea {
+        border-radius: 4px 4px 4px 4px;
         border: solid 1px orange;
-        width: 420px;
+        width: 311px;
         padding: 10px 10px;
         color: orange;
     }
 
     #formContact textarea {
+        display: block;
         resize: none;
         height: 100px;
+        width: 392px;
     }
 
     #formContact select {
+        border-radius: 0px 4px 4px 0px;
         padding: 9px 10px;
         border: solid 1px orange;
         color: orange;
-        width: 340px;
+        width: 310px;
     }
 
     #formContact option {
@@ -1629,13 +1640,14 @@ body{
         transition: background-color 0.2s ease;
         color: white;
         background: #fb8026;
-        width: 80px;
+        width: 173px;
         display: block;
         margin: auto;
     }
 
     #formContact input[type="submit"]:hover {
-        background-color: #a54c0a;
+        background-color: #ff8a34;
+        cursor: pointer;
     }
 
     ::placeholder {
@@ -1654,14 +1666,14 @@ body{
     .invalide {
         background-color: #ff3e3e !important;
     }
-#banner{
-width: 117.5%;
-    margin-left: -100px;
-    margin-top: -40px;
-}
+    #banner{
+        width: 117.5%;
+        margin-left: -100px;
+        margin-top: -40px;
+    }
     /******** END FORM CSS **********/
     #divfoot2 {
-        background-color: #fb8026;
+        background-color: #ff5722;
         display: flex;
         align-items: center;
         justify-content: space-between;
