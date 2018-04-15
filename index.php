@@ -11,6 +11,7 @@ require_once 'views/page_top.php';
     <link href="style/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 
 </head>
@@ -18,15 +19,13 @@ require_once 'views/page_top.php';
 
         <main>
             <h1 class="animTitle">Bienvenue</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Eu vis dico
-                natum deseruisse, eum an falli mandamus, aeque salutandi usu in. Eum ne liber detracto disputando, ne vim detraxit explicari. No vocent adipiscing
-                concludaturque vix, nullam legere dissentiet has no, quando aperiri ea mea. Ad nec omnium laoreet. Et vero placerat eum, an quis tempor epicuri quo,
-                ad aeterno persius duo.
+            <p>CSSWiki peut être un grand moment pour les étudiants. La conception Web peut vraiment cliquer quand ils voient un dessin
+                prendre vie ligne par ligne. Ils voient le résultat direct du code qu'ils écrivent et comment cela contrôle le site.
+                Si vous aidez les élèves à apprendre le Web, CSSWiki est votre ami.
             </p>
 <div id="box-01">
-            <img src="images/titulo.png" alt="animation" class="title">
+    <h6 class="title">Animation Du Jour</h6>
+
 </div>
             <div id="example1"><a href="catalogue.php">
 

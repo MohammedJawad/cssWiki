@@ -5,7 +5,7 @@
     <div id="divfoot1">
         <div id="divfootin1">
             <h3>Abonnement au service de courriels</h3>
-            <p>Ajouter votre nom à notre list d'envoi pour<br>savoir ce qui ce passe à cssWiki</p>
+            <p id="footer-text">Ajouter votre nom à notre list d'envoi pour<br>savoir ce qui ce passe à cssWiki</p>
             <form action="">
                 <input type="email" id="email"  placeholder="Courriel">
                 <input type="submit" value="Envoyer">
@@ -32,13 +32,13 @@
         <p><small>Copyright 2018 cssWiki</small></p>
         <nav>
             <ul>
-                <li><a href="https://www.instagram.com"><img src="images/instagram_logo.png"</a></li>
-                <li><a href="https://twitter.com"><img src="images/twitter_logo.png"</a></li>
-                <li><a href="https://www.facebook.com/"><img src="images/facebook_logo.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com"><img src="images/instagram_logo.png" id="ig"></a></li>
+                <li><a href="https://twitter.com"><img src="images/twitter_logo.png" id="twitter"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="images/facebook_logo.png" alt="fb" id="fb"></a></li>
             </ul>
         </nav>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/go-to-the-top.png" alt="back to top button"></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/go-to-the-top.png" alt="back to top button" id="top"></button>
 </footer>
 <script>
     window.onscroll = function() {scrollFunction()};
