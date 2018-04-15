@@ -64,6 +64,7 @@ if($en_reception){
 
     <main>
         <h1 class="animTitle">Contactez-nous!</h1>
+        <img src="images/banner.png">
         <form id="formContact" method="post">
             <fieldset>
                 <div>
