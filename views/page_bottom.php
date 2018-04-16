@@ -27,7 +27,7 @@
         </div>
     </div>
     <div id="divfoot2">
-        <p><small>Copyright 2018 cssWiki</small></p>
+        <span><small>Copyright 2018 cssWiki</small></span>
         <nav>
             <ul>
                 <li><a href="https://www.instagram.com"><img src="images/instagram_logo.png" id="ig"></a></li>
