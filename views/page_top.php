@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="plugin/codemirror/lib/codemirror.css">
         <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
         <link href="css/font-awesome.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="jquery/jquery-hamburger.js"></script>
     </head>
     <body>

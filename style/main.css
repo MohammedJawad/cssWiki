@@ -3444,6 +3444,7 @@ body{
     }
     /*HEADER FOR MOBILE VERSION*/
     header {
+        background: deeppink;
         display: none;
         /* display: flex;
          box-sizing: border-box;
