@@ -6,7 +6,7 @@
         <div id="divfootin1">
             <h3>Abonnement au service de courriels</h3>
             <p id="footer-text">Ajouter votre nom à notre list d'envoi pour<br>savoir ce qui ce passe à cssWiki</p>
-            <form action="">
+            <form method="post">
                 <input type="email" id="email"  placeholder="Courriel">
                 <input type="submit" value="Envoyer">
             </form>
