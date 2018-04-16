@@ -13,6 +13,12 @@ define('VK_IS_VALID', 'VK_IS_VALID');
 define('VK_VALUE', 'VK_VALUE');
 define('VK_MSG', 'VK_MSG');
 
+// le message
+$msg = "Votre code à bien été envoyé! Nous vous enverrons nos nouvelles le plus tôt possible.";
+
+
+
+
 
 $vld = array(
     F_NOM => array(
@@ -58,6 +64,10 @@ if($en_reception){
 
 }
 
+/*if($vld[F_NOM][VK_IS_VALID] && $vld[F_COURRIEL][VK_IS_VALID] && $vld[F_CATEGORIE][VK_IS_VALID] && $vld[F_MESSAGE][VK_IS_VALID]){
+    // envoyer email
+    mail($vld[F_COURRIEL][VK_VALUE],"My subject",$msg);
+}*/
 
 ?>
 

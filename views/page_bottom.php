@@ -14,7 +14,7 @@
         <div id="divfootin2">
             <nav>
                 <ul>
-                    <li><a href="">A PROPO DE NOUS</a></li>
+                    <li><a href="">A PROPOS DE NOUS</a></li>
                     <li><a href="">PRESÉNTATION</a></li>
                     <li><a href="">PLAN DU SITE</a></li>
                 </ul>
