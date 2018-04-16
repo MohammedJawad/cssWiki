@@ -10,6 +10,8 @@
         <link href="style/main.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="plugin/codemirror/lib/codemirror.css">
         <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link href="css/font-awesome.css" rel="stylesheet">
         <script src="jquery/jquery-hamburger.js"></script>
     </head>
