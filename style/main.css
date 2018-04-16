@@ -47,11 +47,13 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
 }
 
 #menu-toggle{
+    color: white;
     margin-left: 50px;
-    background-color: #FFFFFF;
+    background-color: #fb8026;
     border: none;
     height: 35px;
     width: 35px;
+    font-size: 25px;
 }
 #topmobile{
     display:flex;
@@ -1509,18 +1511,19 @@ section {
 /*END OF THE MAIN*/
 /********* FORM CSS **********/
 #formContact {
-    width: 500px;
+    width: 377px;
     margin: 0 auto;
-    padding-bottom: 125px;
+    padding: 0;
 }
 
 #formContact fieldset > div {
     margin: 10px;
+    padding-left: 16px;
 }
 
 #formContact fieldset {
+    padding: 0;
     border: none;
-    margin-left: 55px;
 }
 
 #formContact label {
@@ -1547,7 +1550,7 @@ section {
     display: block;
     resize: none;
     height: 100px;
-    width: 392px;
+    width: 310px;
 }
 
 #formContact select {
@@ -1635,7 +1638,6 @@ footer {
 
 #divfootin1 {
     font-size: 20px;
-    margin-left: 40px;
     padding: 20px 0 20px;
     text-align: center
 }
