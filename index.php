@@ -13,7 +13,6 @@ require_once 'views/page_top.php';
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
-
 </head>
     <body>
 
