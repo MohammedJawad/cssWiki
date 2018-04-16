@@ -1434,10 +1434,11 @@ div.rocket div {
     position: relative;
     margin-top: 20px;
     border: 1px solid #ccc;
+    text-align: center;
 }
 
 .wrapper2 img{
-    width: 100%;
+    width: 75%;
 }
 
 #labtitlescat {
@@ -1676,7 +1677,7 @@ footer {
 }
 
 #divfoot2 nav {
-    margin-left: 166px;
+    /*margin-left: 166px;*/
 }
 
 #divfoot2 p {

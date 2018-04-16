@@ -39,6 +39,13 @@
 
 </footer>
 
+<script>
+    const menu = document.getElementById('menu');
+    const toggle = document.getElementById('menu-toggle');
 
+    toggle.addEventListener('click', event => {
+        menu.classList.toggle('is-hidden');
+    });
+</script>
 </body>
 </html>
