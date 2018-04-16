@@ -1612,7 +1612,7 @@ footer {
 
 #divfoot1 form input[type=email] {
     padding: 12px 20px;
-    width: 81%;
+    width: 60%;
 }
 
 #divfoot1 nav ul li {
@@ -1674,23 +1674,7 @@ footer {
 #top{
     display: none;
 }
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 90px;
-    right: 10px;
-    z-index: 9999;
-    border: none;
-    outline: none;
-    background-color: #fb8026;;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.7ms;
-    -o-transition-duration: 0.7ms;
-    transition-duration: 0.7ms;
-}
+
 
 /******************************MOBILE VERSION*******************************/
 @media only screen and (min-width:768px) {
@@ -3326,7 +3310,7 @@ footer {
 
     #divfoot1 form input[type=email] {
         padding: 12px 20px;
-        width: 81%;
+        width: 70%;
     }
 
     #divfoot1 nav ul li {
@@ -3379,7 +3363,7 @@ footer {
     }
 
     #divfoot2 nav {
-        margin-left: 166px;
+        margin-left: 286px;
     }
 
     #divfoot2 p {
@@ -3395,23 +3379,6 @@ footer {
         display: none;
     }
 
-    #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 90px;
-        right: 10px;
-        z-index: 9999;
-        border: none;
-        outline: none;
-        background-color: #fb8026;;
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        cursor: pointer;
-        -webkit-transition-duration: 0.7ms;
-        -o-transition-duration: 0.7ms;
-        transition-duration: 0.7ms;
-    }
 }
 /******************************Tablet VERSION*******************************/
 @media only screen and (min-width: 992px) {
@@ -4962,6 +4929,7 @@ footer {
 
     #divfoot1 form input[type=email] {
         padding: 12px 20px;
+        width: 60%;
     }
 
     #divfoot1 nav ul li {
@@ -5102,23 +5070,7 @@ footer {
         color: #fff;
     }
 
-    #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 90px;
-        right: 10px;
-        z-index: 9999;
-        border: none;
-        outline: none;
-        background-color: #fb8026;;
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        cursor: pointer;
-        -webkit-transition-duration: 0.7ms;
-        -o-transition-duration: 0.7ms;
-        transition-duration: 0.7ms;
-    }
+
 }
 
 

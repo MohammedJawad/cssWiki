@@ -38,22 +38,9 @@
             </ul>
         </nav>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/go-to-the-top.png" alt="back to top button" id="top"></button>
-</footer>
-<script>
-    window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+</footer>
+
 </script>
 </body>
 </html>
