@@ -3466,7 +3466,7 @@ footer {
 
     [class*="col-"] {
         float: left;
-        padding: 0 17px;
+        padding: 0 19px;
     }
 
     .row:after {
