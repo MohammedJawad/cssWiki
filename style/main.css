@@ -85,15 +85,15 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
 main {
     margin: 40px 100px 100px;
 }
-p{
+/*p{
     text-align: center;
     font-size: 34px;
     color:#da6c1d;
     font-family: 'Poppins', sans-serif;
-}
+}*/
 /*START ANIMATION FOR H1*/
 .animTitle {
-    padding-top: 58px;
+
     grid-area: text;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 100px;
@@ -133,6 +133,7 @@ p{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
+    color: #fff;
 }
 #box-01{
     height: 60px;
@@ -1805,7 +1806,7 @@ footer {
 
     /*START ANIMATION FOR H1*/
     .animTitle {
-        padding-top: 58px;
+        padding-top: 56px;
         grid-area: text;
         font-family: 'Libre Franklin', sans-serif;
         font-size: 100px;
@@ -1819,6 +1820,8 @@ footer {
         animation-timing-function: linear;
         animation-fill-mode: forwards;
         margin-bottom: 30px;
+        margin-top: 60px;
+
     }
 
     @keyframes bounceIn {
@@ -3498,13 +3501,13 @@ footer {
         margin: 40px 100px 100px;
     }
     p{
-        font-size: 34px;
+        font-size: 20px;
         color:#da6c1d;
         font-family: 'Poppins', sans-serif;
     }
     /*START ANIMATION FOR H1*/
     .animTitle {
-        padding-top: 58px;
+        padding-top: 80px;
         grid-area: text;
         font-family: 'Libre Franklin', sans-serif;
         font-size: 100px;
@@ -3518,6 +3521,7 @@ footer {
         animation-timing-function: linear;
         animation-fill-mode: forwards;
         margin-bottom: 30px;
+        margin-top: 60px;
     }
     @keyframes bounceIn{
         0%{
@@ -4907,6 +4911,9 @@ footer {
         align-items: center;
         justify-content: space-between;
         color: #fb8026;
+    }
+    #divfoot1 p {
+        font-size: 16px;
     }
 
     #divfoot1 form input[type=submit] {
