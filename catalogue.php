@@ -39,7 +39,7 @@ if ( ! array_key_exists(NB_WISH, $_SESSION)) {
 if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
         $_SESSION[NB_WISH]++;
         $_SESSION[IDPROD] = $_GET[IDPROD];
-    }
+}
 
 
 ?>
@@ -67,7 +67,7 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                         <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
 
                             <?php if ($_SESSION[NB_WISH] == 0){ ?>
-                                <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
+                                <img src="images/likevide.png" alt="aimer bouton" id="imglike<?= $id ?>">
                             <?php } else {
                                 $img = 0;
                                 foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
@@ -76,8 +76,7 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
                                     <?php }}
                                 if($img == 0){ $subcategory[$id][EST_FAVORIS] = false; ?>
                                     <img src="images/likevide.png" alt="bouton dislike" id="imglike<?= $id ?>">
-                                <?php  }}
-                            ?>
+                                <?php  }} ?>
                         </a>
 
                         <h4><?= $item[AUTHOR] ?></h4>
