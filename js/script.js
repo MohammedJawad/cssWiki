@@ -3,3 +3,4 @@ function pressePapier() {
     copyText.select();
     document.execCommand("Copy");
 }
+

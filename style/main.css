@@ -101,20 +101,19 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
     color: white;
 }
 
-#logo{
-    margin-top: 0px;
-}
-p{
+
+/*p{
     text-align: center;
-    font-size: 25px;
+    font-size: 34px;
+    color:#da6c1d;
     font-family: 'Poppins', sans-serif;
-}
+}*/
 /*START ANIMATION FOR H1*/
 .animTitle {
 
     grid-area: text;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     margin: 0;
     color: #fb8026;
     text-shadow: 1vmin 1vmin 0 #fb80264a, -1vmin -1vmin 0 #fb802600;
@@ -161,7 +160,7 @@ p{
 
 /*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
 #example1 {
-    width: 95%;
+    width: 300px;
     border: 1px solid #ccc;
     height: 300px;
     margin: auto;
@@ -172,11 +171,11 @@ p{
 #labtitles {
     margin: auto;
     background: #fff8f1;
-    width: 95%;
+    width: 300px;
 }
 
 .title{
-    font-size: 2.7em;
+    font-size: 1.7em;
 }
 
 h3 {
@@ -188,8 +187,8 @@ h3 {
 
 #labtitles img {
     float: right;
-    margin-right: 3%;
-    margin-top: 20px;
+    margin-right: 1%;
+    margin-top: 10px;
 }
 
 h4 {
@@ -1428,13 +1427,13 @@ div.rocket div {
 
 /*START MAIN CATALOGUE*/
 .wrapper2 {
+    text-align: center;
     margin-bottom: 2px;
     width: 100%;
     height: 358px;
     position: relative;
     margin-top: 20px;
     border: 1px solid #ccc;
-    text-align: center;
 }
 
 .wrapper2 img{
@@ -1472,7 +1471,7 @@ section {
 .onglet label {
     display: inline-block;
     margin: 0 0 -1px;
-    padding: 15px 25px;
+    padding: 15px 20px;
     font-weight: 600;
     text-align: center;
     color: #bbb;
@@ -1676,9 +1675,6 @@ footer {
     margin-left: 71px;
 }
 
-#divfoot2 nav {
-    /*margin-left: 166px;*/
-}
 
 #divfoot2 p {
     margin-left: 40px;
@@ -1691,8 +1687,15 @@ footer {
     display: none;
 }
 
+small{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 0.7em;
+}
 
-/******************************MOBILE VERSION*******************************/
+/******************************TABLET VERSION*******************************/
 
 @media only screen and (min-width:768px) {
     #menu ul li a {
@@ -3529,7 +3532,6 @@ footer {
         margin-left: 50px;
     }
 
-
     /*END OF THE HEADER*/
     /************START MAIN INDEX FOR DESKTOP************/
     main {
@@ -3613,8 +3615,8 @@ footer {
 
     #labtitles img {
         float: right;
-        margin-right: 3%;
-        margin-top: 22px;
+        margin-right: 1%;
+        margin-top: 10px;
     }
 
     h4 {
@@ -5107,6 +5109,11 @@ footer {
     #divfoot2 p {
         margin-left: 40px;
         color: #fff;
+    }
+
+    footer ul{
+        display: inline-block;
+        width: 370px;
     }
 
 

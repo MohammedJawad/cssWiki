@@ -332,8 +332,8 @@ $subcategory = array(
 
     '21' => array(
         EST_FAVORIS => false,
-        IMAGE => "bouton1.png",
-        ALT => "image bouton1",
+        IMAGE => "animation1.png",
+        ALT => "image animation1",
         NAME_CATEGORY => "2",
         NAME_SUBCATEGORY => "Animations 1",
         AUTHOR => 'Auteur aa',

@@ -27,7 +27,7 @@
         </div>
     </div>
     <div id="divfoot2">
-        <span><small>Copyright 2018 cssWiki</small></span>
+        <small>Copyright 2018 cssWiki</small>
         <nav>
             <ul>
                 <li><a href="https://www.instagram.com"><img src="images/instagram_logo.png" id="ig"></a></li>
@@ -38,7 +38,6 @@
     </div>
 
 </footer>
-
 <script>
     const menu = document.getElementById('menu');
     const toggle = document.getElementById('menu-toggle');
@@ -47,5 +46,6 @@
         menu.classList.toggle('is-hidden');
     });
 </script>
+
 </body>
 </html>
