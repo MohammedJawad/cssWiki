@@ -67,6 +67,23 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
     border-bottom: 5px solid #ffffff;
 }
 
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+}
+
+.main-menu li {
+    display: block;
+    padding: 10px;
+}
+#menu ul li a {
+    text-decoration: none;
+    color:#fb8026;
+}
+#menu ul {
+    text-decoration: none;
+}
+
 /*MENU HAMBURGER*/
 
 .is-hidden {
@@ -1674,8 +1691,26 @@ footer {
 /******************************MOBILE VERSION*******************************/
 
 @media only screen and (min-width:768px) {
+    #menu ul li a {
+        color:#ffffff;
+    }
+    .main-menu ul {
+        list-style: none;
+    }
+
+    .main-menu li {
+        display: inline-block;
+        float: left;
+        padding: 10px;
+    }
+
+    .main-menu {
+        padding: 20px;
+    }
+
+
     .fa-heart {
-        margin-top: -115px;
+        margin-top: -100px;
         margin-left: 0;
         font-size: 34px;
          }
@@ -1692,6 +1727,10 @@ footer {
     }
     .nomenu{
         display:block;
+    }
+
+    #menu ul{
+        margin-top: 10px;
     }
 
     .col-m-1 {
@@ -1764,19 +1803,6 @@ footer {
         border-bottom: 5px solid #ffffff;
     }
 
-    .main-menu ul {
-        list-style: none;
-    }
-
-    .main-menu li {
-        display: inline-block;
-        float: left;
-        padding: 10px;
-    }
-
-    .main-menu {
-        padding: 20px;
-    }
 
     header a {
         font-family: 'arial';
@@ -3392,7 +3418,7 @@ footer {
 /******************************Tablet VERSION*******************************/
 @media only screen and (min-width: 992px) {
     .fa-heart {
-        margin-top: -115px;
+        margin-top: -100px;
         margin-left: 0;
         font-size: 34px;
     }
