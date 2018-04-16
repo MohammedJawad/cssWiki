@@ -1916,9 +1916,10 @@ small{
     }
 
     #labtitles img {
+        width: 34px;
         float: right;
-        margin-right: 1%;
-        margin-top: 10px;
+        margin-right: 3%;
+        margin-top: 19px;
     }
 
     h4 {
@@ -3614,9 +3615,10 @@ small{
     }
 
     #labtitles img {
+        width: 34px;
         float: right;
-        margin-right: 1%;
-        margin-top: 10px;
+        margin-right: 3%;
+        margin-top: 19px;
     }
 
     h4 {
