@@ -45,7 +45,18 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
     width: 100%;
     padding: 0 0;
 }
-header{
+
+#menu-toggle{
+    margin-left: 50px;
+    background-color: #FFFFFF;
+    border: none;
+    height: 35px;
+    width: 35px;
+}
+#topmobile{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
     background-color: #fb8026;
     width:100%;
     height:97px;
@@ -55,35 +66,14 @@ header{
     z-index:100;
     border-bottom: 5px solid #ffffff;
 }
-#main-menu ul{
-    list-style:none;
-}
-#main-menu li{
-    display:inline-block;
-    float:left;
-    padding: 10px;
-}
-#main-menu{
-    padding:20px;
-}
-header a{
-    font-family: 'arial';
-    color:#FFF;
-    text-decoration:none;
 
-}
-a:hover{
-    cursor: pointer;
+/*MENU HAMBURGER*/
+
+.is-hidden {
+    display: none;
 }
 
-#logo {
-    margin-top:-12px;
-    float:left;
-    display:block;
-    width: 218px;
-}
 .fa-heart {
-    margin-top:-21px;
     top: 0;
     left: 0;
     float: right;
@@ -146,7 +136,7 @@ p{
 }
 #box-01{
     height: 60px;
-    background-color: #fb8121;
+    background-color: #fb8026;
 }
 /*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
 #example1 {
@@ -1646,7 +1636,7 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 #divfoot2 {
-    background-color: #ff5722;
+    background-color: #fb8026;
     display: inline-block;
     align-items: center;
     justify-content: space-between;
@@ -1677,7 +1667,28 @@ footer {
 
 
 /******************************MOBILE VERSION*******************************/
+
 @media only screen and (min-width:768px) {
+    .fa-heart {
+        margin-top: -115px;
+        margin-left: 0;
+        font-size: 34px;
+         }
+    .is-hidden {
+        display: block;
+    }
+
+    #topmobile > span{
+        display:none;
+    }
+
+    #topmobile{
+        display:none;
+    }
+    .nomenu{
+        display:block;
+    }
+
     .col-m-1 {
         width: 8.33%;
     }
@@ -1748,17 +1759,17 @@ footer {
         border-bottom: 5px solid #ffffff;
     }
 
-    #main-menu ul {
+    .main-menu ul {
         list-style: none;
     }
 
-    #main-menu li {
+    .main-menu li {
         display: inline-block;
         float: left;
         padding: 10px;
     }
 
-    #main-menu {
+    .main-menu {
         padding: 20px;
     }
 
@@ -1778,16 +1789,7 @@ footer {
         float: left;
         display: block;
         width: 218px;
-    }
-
-    .fa-heart {
-        margin-top: -21px;
-        top: 0;
-        left: 0;
-        float: right;
-        padding-right: 50px;
-        font-size: 34px;
-        color: white;
+        margin-left: 50px;
     }
 
     main {
@@ -1847,7 +1849,7 @@ footer {
 
     #box-01 {
         height: 60px;
-        background-color: #fb8121;
+        background-color: #fb8026;
     }
 
     /*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
@@ -3122,8 +3124,6 @@ footer {
 
     .wrapper2 img {
         width: 70%;
-        margin: 0 auto;
-        display: inherit;
     }
 
     #labtitlescat {
@@ -3350,7 +3350,7 @@ footer {
     }
 
     #divfoot2 {
-        background-color: #ff5722;
+        background-color: #fb8026;
         display: inline-block;
         align-items: center;
         justify-content: space-between;
@@ -3384,7 +3384,11 @@ footer {
 }
 /******************************Tablet VERSION*******************************/
 @media only screen and (min-width: 992px) {
-
+    .fa-heart {
+        margin-top: -115px;
+        margin-left: 0;
+        font-size: 34px;
+    }
     .col-1 {
         width: 8.33%;
     }
@@ -3455,17 +3459,17 @@ footer {
         border-bottom: 5px solid #ffffff;
     }
 
-    #main-menu ul {
+    .main-menu ul {
         list-style: none;
     }
 
-    #main-menu li {
+    .main-menu li {
         display: inline-block;
         float: left;
         padding: 10px;
     }
 
-    #main-menu {
+    .main-menu {
         padding: 20px;
     }
 
@@ -3485,16 +3489,7 @@ footer {
         float: left;
         display: block;
         width: 218px;
-    }
-
-    .fa-heart {
-        margin-top: -21px;
-        top: 0;
-        left: 0;
-        float: right;
-        padding-right: 50px;
-        font-size: 34px;
-        color: white;
+        margin-left: 50px;
     }
 
     /*END OF THE HEADER*/
@@ -3552,7 +3547,7 @@ footer {
     }
     #box-01{
         height: 60px;
-        background-color: #fb8121;
+        background-color: #fb8026;
     }
     /*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
     #example1 {
@@ -4354,7 +4349,6 @@ footer {
     /********* TESTING CODE MODIFIED *********/
 
     #preview-form {
-        margin-top: 50px;
         min-width: 430px;
     }
 
@@ -5050,7 +5044,7 @@ footer {
     }
     /******** END FORM CSS **********/
     #divfoot2 {
-        background-color: #ff5722;
+        background-color: #fb8026;
         display: flex;
         align-items: center;
         justify-content: space-between;
