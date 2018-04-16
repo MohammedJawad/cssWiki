@@ -13,17 +13,15 @@
         </div>
         <div id="divfootin2">
             <nav>
-                <ul>
-                    <li><a href="">A PROPOS DE NOUS</a></li>
-                    <li><a href="">PRESÉNTATION</a></li>
-                    <li><a href="">PLAN DU SITE</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="contact.php">CONTACTEZ-NOUS</a></li>
-                    <li><a href="tel:15148422426">+1 514 842 2426</a></li>
-                    <li><a href="">PLAN DU SITE</a></li>
+                <ul itemscope itemtype="http://schema.org/Organization">
+                    <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span>ADRESSE</span>
+                        <span itemprop="streetAddress">255 boul. Crémazie Est, bureau 100</span>
+                        <span itemprop="postalCode">H2M 1M2</span>
+
+                    </li>
+                    <li><span itemprop="telephone">514-842-2426</span></li>
+                    <li><span itemprop="email">info@isi-mtl.com</span></li>
                 </ul>
             </nav>
         </div>

@@ -82,9 +82,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
     color: white;
 }
 
-main {
-    margin: 40px 100px 100px;
-}
+
 /*p{
     text-align: center;
     font-size: 34px;
@@ -96,7 +94,7 @@ main {
 
     grid-area: text;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 100px;
+    font-size: 3em;
     margin: 0;
     color: #fb8026;
     text-shadow: 1vmin 1vmin 0 #fb80264a, -1vmin -1vmin 0 #fb802600;
@@ -139,9 +137,11 @@ main {
     height: 60px;
     background-color: #fb8026;
 }
+
+
 /*START ANIMATION 1-INDEX FOR DESKTOP VERSION */
 #example1 {
-    width: 600px;
+    width: 300px;
     border: 1px solid #ccc;
     height: 300px;
     margin: auto;
@@ -152,7 +152,11 @@ main {
 #labtitles {
     margin: auto;
     background: #fff8f1;
-    width: 600px;
+    width: 300px;
+}
+
+.title{
+    font-size: 1.7em;
 }
 
 h3 {
@@ -1799,7 +1803,7 @@ footer {
 
     p {
         text-align: center;
-        font-size: 34px;
+        font-size: 1em;
         color: #da6c1d;
         font-family: 'Poppins', sans-serif;
     }
