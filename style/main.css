@@ -3293,6 +3293,12 @@ body{
     }
 
     /********* FORM CSS **********/
+    #errmsg{
+        color: red;
+        font-size: small;
+        margin-left: 10px;
+        font-weight: bold;
+    }
     #formContact {
         width: 500px;
         margin: 0 auto;
@@ -3382,6 +3388,9 @@ body{
         margin-left: -100px;
         margin-top: -40px;
     }
+
+
+
     /******** END FORM CSS **********/
     #divfoot2 {
         background-color: #ff5722;
