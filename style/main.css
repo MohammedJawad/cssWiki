@@ -992,6 +992,7 @@ body{
         display: flex;
         justify-content: space-around;
         padding-bottom: 30px;
+        margin-top: 60px;
     }
 
     #preview-comment {

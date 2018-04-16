@@ -20,7 +20,7 @@ require_once 'views/page_top.php';
         <main>
             <h1 class="animTitle">Bienvenue</h1>
             <p>CSSWiki peut être un grand moment pour les étudiants. La conception Web peut vraiment cliquer quand ils voient un dessin
-                prendre vie ligne par ligne. Ils voient le résultat direct du code qu'ils écrivent et comment cela contrôle le site.
+                prendre vie en ligne par ligne. Ils voient le résultat direct du code qu'ils écrivent et comment cela contrôle le site.
                 Si vous aidez les élèves à apprendre le Web, CSSWiki est votre ami.
             </p>
 <div id="box-01">

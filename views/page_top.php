@@ -28,5 +28,5 @@
 
             </nav>
 
-            <span><a class="fas fa-heart"></a></span>
+            <a href="favoris.php"><span class="fas fa-heart"></span></a>
         </header>

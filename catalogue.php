@@ -64,21 +64,21 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
 
                         <!-- A RETESTER! -->
 
-                        <!--<a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
+                        <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
 
                             <?php if ($_SESSION[NB_WISH] == 0){ ?>
                                 <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
                             <?php } else {
                                 $img = 0;
                                 foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
-                                    if($id == $itemfav) { $img = 1  ?>
-                                        <img src="images/like.png" alt="" id="imglike<?= $id ?>">
+                                    if($id == $itemfav) { $img = 1; $subcategory[$id][EST_FAVORIS] = true;  ?>
+                                        <img src="images/like.png" alt="bouton like" id="imglike<?= $id ?>">
                                     <?php }}
-                                if($img == 0){?>
-                                    <img src="images/likevide.png" alt="" id="imglike<?= $id ?>"
+                                if($img == 0){ $subcategory[$id][EST_FAVORIS] = false; ?>
+                                    <img src="images/likevide.png" alt="bouton dislike" id="imglike<?= $id ?>">
                                 <?php  }}
                             ?>
-                        </a> -->
+                        </a>
 
                         <h4><?= $item[AUTHOR] ?></h4>
                     </div>
@@ -97,21 +97,21 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
 
                     <!-- A RETESTER! -->
 
-                    <!--<a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
+                    <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
 
-                            <?php if ($_SESSION[NB_WISH] == 0){ ?>
-                                <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
-                            <?php } else {
-                        $img = 0;
-                        foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
-                            if($id == $itemfav) { $img = 1  ?>
-                                        <img src="images/like.png" alt="" id="imglike<?= $id ?>">
-                                    <?php }}
-                        if($img == 0){?>
-                                    <img src="images/likevide.png" alt="" id="imglike<?= $id ?>"
-                                <?php  }}
-                    ?>
-                        </a> -->
+                        <?php if ($_SESSION[NB_WISH] == 0){ ?>
+                            <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
+                        <?php } else {
+                            $img = 0;
+                            foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
+                                if($id == $itemfav) { $img = 1; $subcategory[$id][EST_FAVORIS] = true;  ?>
+                                    <img src="images/like.png" alt="bouton like" id="imglike<?= $id ?>">
+                                <?php }}
+                            if($img == 0){ $subcategory[$id][EST_FAVORIS] = false; ?>
+                                <img src="images/likevide.png" alt="bouton dislike" id="imglike<?= $id ?>">
+                            <?php  }}
+                        ?>
+                    </a>
 
                     <h4><?= $item[AUTHOR] ?></h4>
                 </div>
@@ -131,21 +131,21 @@ if ( (array_key_exists(OP_NAME, $_GET)) && ($_GET[OP_NAME] === OP_AJOUT) ) {
 
                             <!-- A RETESTER! -->
 
-                            <!--<a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
+                            <a href="<?= $_SERVER['PHP_SELF'], '?',  OP_NAME , '=' , OP_AJOUT, '&' , IDPROD, '=', $id ?>" id="img<?= $id ?>">
 
-                            <?php if ($_SESSION[NB_WISH] == 0){ ?>
-                                <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
-                            <?php } else {
-                                $img = 0;
-                                foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
-                                    if($id == $itemfav) { $img = 1  ?>
-                                        <img src="images/like.png" alt="" id="imglike<?= $id ?>">
-                                    <?php }}
-                                if($img == 0){?>
-                                    <img src="images/likevide.png" alt="" id="imglike<?= $id ?>"
-                                <?php  }}
-                            ?>
-                        </a> -->
+                                <?php if ($_SESSION[NB_WISH] == 0){ ?>
+                                    <img src="images/likevide.png" alt="" id="imglike<?= $id ?>">
+                                <?php } else {
+                                    $img = 0;
+                                    foreach ($_SESSION[SESS_FAVORITE] as $idfav => $itemfav) {
+                                        if($id == $itemfav) { $img = 1; $subcategory[$id][EST_FAVORIS] = true;  ?>
+                                            <img src="images/like.png" alt="bouton like" id="imglike<?= $id ?>">
+                                        <?php }}
+                                    if($img == 0){ $subcategory[$id][EST_FAVORIS] = false; ?>
+                                        <img src="images/likevide.png" alt="bouton dislike" id="imglike<?= $id ?>">
+                                    <?php  }}
+                                ?>
+                            </a>
 
                             <h4><?= $item[AUTHOR] ?></h4>
                         </div>

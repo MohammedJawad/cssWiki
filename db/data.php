@@ -11,6 +11,7 @@ define('OP_AJOUT', 'add');
 define('NB_WISH', 'Total');
 define('IDPROD', 'Produit');
 define ('SESS_FAVORITE', 'SESS_FAVORITE');
+define('EST_FAVORIS', 'est_favoris');
 
 
 
@@ -30,6 +31,7 @@ $category = array(
 
 $subcategory = array(
     '11' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -99,6 +101,7 @@ $subcategory = array(
     ),
 
     '12' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -126,6 +129,7 @@ $subcategory = array(
     ),
 
     '13' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -135,6 +139,7 @@ $subcategory = array(
     ),
 
     '14' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -144,6 +149,7 @@ $subcategory = array(
     ),
 
     '15' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -153,6 +159,7 @@ $subcategory = array(
         ),
 
     '16' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -162,6 +169,7 @@ $subcategory = array(
     ),
 
     '17' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -171,6 +179,7 @@ $subcategory = array(
     ),
 
     '18' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -179,6 +188,7 @@ $subcategory = array(
         CODE => "",
     ),
     '19' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "1",
@@ -188,6 +198,7 @@ $subcategory = array(
     ),
 
     '21' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -240,6 +251,7 @@ $subcategory = array(
     ),
 
     '22' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -249,6 +261,7 @@ $subcategory = array(
     ),
 
     '23' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -258,6 +271,7 @@ $subcategory = array(
     ),
 
     '24' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -267,6 +281,7 @@ $subcategory = array(
     ),
 
     '25' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -276,6 +291,7 @@ $subcategory = array(
     ),
 
     '26' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -285,6 +301,7 @@ $subcategory = array(
     ),
 
     '27' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -294,6 +311,7 @@ $subcategory = array(
     ),
 
     '28' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -302,6 +320,7 @@ $subcategory = array(
         CODE => "",
     ),
     '29' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "2",
@@ -310,6 +329,7 @@ $subcategory = array(
         CODE => "",
     ),
     '31' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -324,6 +344,7 @@ $subcategory = array(
     ),
 
     '32' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -333,6 +354,7 @@ $subcategory = array(
     ),
 
     '33' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -342,6 +364,7 @@ $subcategory = array(
     ),
 
     '34' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -351,6 +374,7 @@ $subcategory = array(
     ),
 
     '35' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -360,6 +384,7 @@ $subcategory = array(
     ),
 
     '36' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -369,6 +394,7 @@ $subcategory = array(
     ),
 
     '37' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -378,6 +404,7 @@ $subcategory = array(
     ),
 
     '38' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
@@ -387,6 +414,7 @@ $subcategory = array(
     ),
 
     '39' => array(
+        EST_FAVORIS => false,
         IMAGE => "bouton1.png",
         ALT => "image bouton1",
         NAME_CATEGORY => "3",
